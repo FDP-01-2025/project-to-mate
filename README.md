@@ -43,4 +43,4 @@ Archivos en el Disco: Se utilizaran archivos para almacenar las diferentes sprit
 
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone [URL del repositorio]
+   git clone [https://github.com/FDP-01-2025/project-to-mate.git]
