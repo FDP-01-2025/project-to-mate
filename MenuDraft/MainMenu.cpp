@@ -23,7 +23,7 @@ void GetConsoleSize(int &rows, int &columns) {
 void mainPageLogo(){
 
     vector<string> logoLines={
-    "                                                                                                                   "
+    "                                                                                                                   ",
     "                                                                                                                   ",
     "                               @@@ @       @@              @@@@@     @@@@       @                                  ",
     "                 @@@    @@@@     @@@        @@@@       @@     @@@@    @@@@   @@@@@        @@@@                     ",
@@ -55,6 +55,10 @@ void mainPageLogo(){
     string message = "CLICK ANY KEY TO START";
     int messagePadding = max(0, (columns - (int)message.length()) / 2);
     cout << endl << string(messagePadding, ' ') << FLICKERING << FG_PINK << NEGRITA << message << RESET << endl;
+    for(int i=0;i<10;i++){
+        cout<<endl;
+    }
+    cout<<FG_BLUE<<NEGRITA<<"2025 TO->MATE INC"<<RESET<<endl;
 
     getch(); 
 }
