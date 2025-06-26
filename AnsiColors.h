@@ -6,6 +6,7 @@ const string RESET    = "\033[0m";
 const string NEGRITA  = "\033[1m";
 const string SUBRAYADO = "\033[4m";
 const string INVERSO  = "\033[7m";
+const string FLICKERING = "\033[5m";
 
 // Colores de texto (foreground)
 const string FG_BLACK   = "\033[30m";
