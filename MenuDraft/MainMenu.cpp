@@ -23,7 +23,7 @@ void GetConsoleSize(int &rows, int &columns) {
 void mainPageLogo(){
 
     vector<string> logoLines={
-    "                                                                                                                   "
+    "                                                                                                                   ",
     "                                                                                                                   ",
     "                               @@@ @       @@              @@@@@     @@@@       @                                  ",
     "                 @@@    @@@@     @@@        @@@@       @@     @@@@    @@@@   @@@@@        @@@@                     ",
