@@ -63,7 +63,7 @@ void GameStart(){
     //Llamar el archivo del juego xd
 }
 
-void Options(){
+void About(){
     cout<<"How to play?\n\tAfter selecting a character, you will face game battles where\n you can atack, defend or just leave :v\n";
 }
 
@@ -113,7 +113,7 @@ int main() {
     system("chcp 850 > nul");
     vector<string> MainMenu = {
         "Start game",
-        "Options",
+        "About",
         "Credits",
         "Leave"
     };
@@ -143,7 +143,7 @@ int main() {
                     GameStart();
                     break;
                 case 1:
-                    Options();
+                    About();
                     break;
                 case 2:
                     Credits();
