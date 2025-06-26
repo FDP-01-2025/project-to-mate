@@ -64,7 +64,7 @@ void Options(){
 
 void Credits(){
     cout<<BG_MAGENTA<<FG_BLACK<<NEGRITA<<"THIS GAME EXIST THANKS TO:\n"<<RESET;
-    cout<<"Diego Armando Mata Cortez [00115025]\nManuel Tobar Garcia [00067423]\nAndy Samuel Ochoa Gonzqlez [00064825]\nClaudia Sofia Pocasangre Peralta [00005225]\n";
+    cout<<"Diego Armando Mata Cortez [00115025]\nManuel Tobar Garcia [00067423]\nAndy Samuel Ochoa Gonzalez [00064825]\nClaudia Sofia Pocasangre Peralta [00005225]\n";
 }
 
 void mostrarMenu(const vector<string>& MainMenu, int choice) {
