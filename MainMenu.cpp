@@ -4,9 +4,14 @@
 #include <windows.h>
 #include <vector>
 #include <algorithm>
+#include <thread>
+#include <chrono>
 #include "AnsiColors.h"  
 
 using namespace std;
+using namespace std::this_thread;
+using namespace std::chrono_literals;
+
 
 void GetConsoleSize(int &rows, int &columns) {
     CONSOLE_SCREEN_BUFFER_INFO csbi;
@@ -152,8 +157,8 @@ int main() {
             break;
         }
     }
-
+    sleep_for(std::chrono::milliseconds(5000));
     system("cls");
-    
+
     return 0;
 }
