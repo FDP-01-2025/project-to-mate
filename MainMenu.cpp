@@ -1,10 +1,58 @@
 #include <iostream>
 #include <conio.h>
+#include <fstream>
 #include <windows.h>
 #include <vector>
+#include <algorithm>
 #include "AnsiColors.h"  
+
 using namespace std;
 
+void GetConsoleSize(int &rows, int &columns) {
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+    GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
+    columns = csbi.srWindow.Right - csbi.srWindow.Left + 1;
+    rows = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
+}
+
+void mainPageLogo(){
+
+    vector<string> logoLines={
+    "                                                                                                                   "
+    "                                                                                                                   ",
+    "                               @@@ @       @@              @@@@@     @@@@       @                                  ",
+    "                 @@@    @@@@     @@@        @@@@       @@     @@@@    @@@@   @@@@@        @@@@                     ",
+    "      @@@@  @    @@@@     @@@    @@          @@@@      @@@    @@@     @@@@  @@@@ @    @     @@@@     @@@@   @@     ",
+    "    @   @@@@@    @@@@     @@@@    @       @   @@@@     @@@@  @@      @ @@@@@@@@      @@      @@@@     @@@@  @@@    ",
+    "    @@@           @@@      @@@@  @       @@   @@@@     @@@@   @@     @    @@    @   @@@@      @@@      @@@@  @@    ",
+    "     @@@@@@@@@    @@@       @@@@        @@@@   @@@@    @@@@  @@@@    @@@      @@@    @@@@      @@   @   @@@@ @@    ",
+    "           @@@@   @@@@         @@       @@@@    @@@@@  @@@@   @@@@@ @@@@     @@@@    @@@@@     @    @@  @@@@       ",
+    "     @@@@@       @@@@                                                         @@      @@@@@        @@@   @@@@      ",
+    "     @@@@@@@@@                                                                                      @@@      @     "                                                                                                                                                                                                     
+    };
+    
+    int rows, columns;
+    GetConsoleSize(rows, columns);
+
+    // Encontrar la línea más larga del logo
+    int maxLength = 0;
+    for (int i=0; i<logoLines.size();i++) {
+        string line=logoLines[i];
+        if (line.length() > maxLength) maxLength = line.length();
+    }
+
+    for (int i=0; i<logoLines.size();i++) {
+        string line=logoLines[i];
+        int padding = max(0, (columns - (int)line.length()) / 2);
+        cout << string(padding, ' ') << NEGRITA << line << RESET << endl;
+    }
+
+    string message = "CLICK ANY KEY TO START";
+    int messagePadding = max(0, (columns - (int)message.length()) / 2);
+    cout << endl << string(messagePadding, ' ') << FLICKERING << FG_PINK << NEGRITA << message << RESET << endl;
+
+    getch(); 
+}
 
 void GameStart(){
     //Llamar el archivo del juego xd
@@ -17,13 +65,6 @@ void Options(){
 void Credits(){
     cout<<BG_MAGENTA<<FG_BLACK<<NEGRITA<<"THIS GAME EXIST THANKS TO:\n"<<RESET;
     cout<<"Diego Armando Mata Cortez [00115025]\nManuel Tobar Garcia [00067423]\nAndy Samuel Ochoa Gonzqlez [00064825]\nClaudia Sofia Pocasangre Peralta [00005225]\n";
-}
-
-void GetConsoleSize(int &rows, int &columns) {
-    CONSOLE_SCREEN_BUFFER_INFO csbi;
-    GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
-    columns = csbi.srWindow.Right - csbi.srWindow.Left + 1;
-    rows = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
 }
 
 void mostrarMenu(const vector<string>& MainMenu, int choice) {
@@ -64,6 +105,7 @@ void mostrarMenu(const vector<string>& MainMenu, int choice) {
 }
 
 int main() {
+    system("chcp 850 > nul");
     vector<string> MainMenu = {
         "Start game",
         "Options",
@@ -73,8 +115,9 @@ int main() {
 
     int choice = 0;
     char key;
-
-
+    mainPageLogo();
+    // apretar cualquier tecla
+    system("cls");
     while (true) {
         mostrarMenu(MainMenu, choice);
         key = getch();
