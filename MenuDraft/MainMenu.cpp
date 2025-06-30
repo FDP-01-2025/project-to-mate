@@ -20,6 +20,7 @@ void GetConsoleSize(int &rows, int &columns) {
     rows = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
 }
 
+
 void mainPageLogo(){
 
     vector<string> logoLines={

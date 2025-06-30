@@ -1,5 +1,5 @@
-#include "BossFondo2.h"
-#include "SpritsDemo.h"
+#include <BossFondo2.h>
+#include <SpritsDemo.h>
 #include <iostream>
 
 int main() {

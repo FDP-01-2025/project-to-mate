@@ -1,5 +1,27 @@
+#ifndef HEADER_H
+#define HEADER_H
+
 #include <iostream>
+#include <conio.h>
+#include <fstream>
+#include <windows.h>
+#include <vector>
+#include <algorithm>
+#include <thread>
+#include <chrono>
+
 using namespace std;
+using namespace std::this_thread;
+using namespace std::chrono_literals;
+
+// Funciones
+void GetConsoleSize(int &rows, int &columns);
+void mainPageLogo();
+void mostrarMenu(const vector<string>& MainMenu, int choice);
+void GameStart();
+void About();
+void Credits();
+
 
 // RESET y estilos
 const string RESET    = "\033[0m";
@@ -36,5 +58,4 @@ const string BG_PINK = "\033[48;5;163m";
 const string BG_LIGHTBLUE = "\033[48;5;111m";
 const string BG_ORANGE ="\033[48;5;216m";
 
-//Modelo para el cout
-// cout << [ESTILO] << [COLOR_FG] << [COLOR_BG] << "Texto" << RESET;
+#endif
