@@ -20,6 +20,7 @@ const string FG_WHITE  = "\033[37m";
 const string FG_VIOLET = "\033[38;5;128m";
 const string FG_PINK = "\033[38;5;163m";
 const string FG_LIGHTBLUE = "\033[38;5;111m";
+const string FG_ORANGE ="\033[38;5;216m";
 
 // Colores de fondo (background)
 const string BG_BLACK = "\033[30m";
@@ -33,6 +34,7 @@ const string BG_WHITE = "\033[47m";
 const string BG_VIOLET = "\033[48;5;128m";
 const string BG_PINK = "\033[48;5;163m";
 const string BG_LIGHTBLUE = "\033[48;5;111m";
+const string BG_ORANGE ="\033[48;5;216m";
 
 //Modelo para el cout
 // cout << [ESTILO] << [COLOR_FG] << [COLOR_BG] << "Texto" << RESET;
