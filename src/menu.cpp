@@ -1,69 +1,34 @@
-#include "header.h"
+#include "MenuUtils.h"
 
-void mainPageLogo() {
-    vector<string> logoLines = {
-        "                                                                                                                   ",
-        "                                                                                                                   ",
-        "                               @@@ @       @@              @@@@@     @@@@       @                                  ",
-        "                 @@@    @@@@     @@@        @@@@       @@     @@@@    @@@@   @@@@@        @@@@                     ",
-        "      @@@@  @    @@@@     @@@    @@          @@@@      @@@    @@@     @@@@  @@@@ @    @     @@@@     @@@@   @@     ",
-        "    @   @@@@@    @@@@     @@@@    @       @   @@@@     @@@@  @@      @ @@@@@@@@      @@      @@@@     @@@@  @@@    ",
-        "    @@@           @@@      @@@@  @       @@   @@@@     @@@@   @@     @    @@    @   @@@@      @@@      @@@@  @@    ",
-        "     @@@@@@@@@    @@@       @@@@        @@@@   @@@@    @@@@  @@@@    @@@      @@@    @@@@      @@   @   @@@@ @@    ",
-        "           @@@@   @@@@         @@       @@@@    @@@@@  @@@@   @@@@@ @@@@     @@@@    @@@@@     @    @@  @@@@       ",
-        "     @@@@@       @@@@                                                         @@      @@@@@        @@@   @@@@      ",
-        "     @@@@@@@@@                                                                                      @@@      @     "
-    };
-
+void mainPageLogo(){
     int rows, columns;
     GetConsoleSize(rows, columns);
-
-    int logoHeight = logoLines.size();
-    int logoStartY = (rows - logoHeight) / 2 - 2; // Centramos un poco más arriba
-    int logoStartX;
-
-    system("cls");
-
-    // Mostrar el logo centrado
-    for (int i = 0; i < logoLines.size(); ++i) {
-        string line = logoLines[i];
-        logoStartX = max(0, (columns - (int)line.length()) / 2);
-
-        COORD coord;
-        coord.X = logoStartX;
-        coord.Y = logoStartY + i;
-        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-
-        cout << NEGRITA << line << RESET;
-    }
-
+    PrintSivarMesagge(GameName);
+    
     string message = "PRESS ANY KEY TO START";
     int messageX = max(0, (columns - (int)message.length()) / 2);
-    int messageY = logoStartY + logoLines.size() + 2;
-
+    int messageY = GameName.size()+3;
+    
     vector<string> colores = {
         FG_RED, FG_YELLOW, FG_GREEN, FG_CYAN, FG_BLUE, FG_MAGENTA, FG_WHITE, FG_PINK
     };
-
+    
     int colorIndex = 0;
-
+    
+    cout<<string((rows/2)+2, ' ') << FG_BLUE<<NEGRITA<<"2025 TO->MATE INC"<<RESET<<endl;
     while (!_kbhit()) {
         COORD coord;
         coord.X = messageX;
         coord.Y = messageY;
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-
-        cout << colores[colorIndex % colores.size()] << FLICKERING << NEGRITA
-             << message << RESET << flush;
-
+        cout << colores[colorIndex % colores.size()] << FLICKERING << NEGRITA << message << RESET << flush;
         colorIndex++;
         sleep_for(300ms);
     }
-
-    getch(); // Espera la tecla
+    getch(); 
 }
-
-
+    
+ 
 void mostrarMenu(const vector<string>& MainMenu, int choice) {
     int rows, columns;
     GetConsoleSize(rows, columns);
