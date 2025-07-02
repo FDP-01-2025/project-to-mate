@@ -9,6 +9,9 @@
 #include <algorithm>
 #include <thread>
 #include <chrono>
+#include <map> 
+#include <vector>
+#include <string.h>
 
 using namespace std;
 using namespace std::this_thread;
@@ -31,7 +34,7 @@ const string INVERSO  = "\033[7m";
 const string FLICKERING = "\033[5m";
 
 // Colores de texto (foreground)
-const string FG_BLACK   = "\033[30m";
+const string FG_BLACK   = "\033[38;5;232m";
 const string FG_RED    = "\033[31m";
 const string FG_GREEN   = "\033[32m";
 const string FG_YELLOW= "\033[33m";
@@ -43,9 +46,9 @@ const string FG_VIOLET = "\033[38;5;128m";
 const string FG_PINK = "\033[38;5;163m";
 const string FG_LIGHTBLUE = "\033[38;5;111m";
 const string FG_ORANGE ="\033[38;5;216m";
-
+const string FG_DEEP_BLUE ="\033[38;5;17m";
 // Colores de fondo (background)
-const string BG_BLACK = "\033[30m";
+const string BG_BLACK = "\033[48;5;232m";
 const string BG_RED = "\033[41m";
 const string BG_GREEN = "\033[42m";
 const string BG_YELLOW = "\033[43m";
@@ -57,5 +60,5 @@ const string BG_VIOLET = "\033[48;5;128m";
 const string BG_PINK = "\033[48;5;163m";
 const string BG_LIGHTBLUE = "\033[48;5;111m";
 const string BG_ORANGE ="\033[48;5;216m";
-
+const string BG_DEEP_BLUE ="\033[48;5;17m";
 #endif
