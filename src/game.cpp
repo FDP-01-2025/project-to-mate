@@ -1,8 +1,7 @@
-#include "header.h"
+#include "GameStartMenu.h"
 
 void GameStart() {
-    cout << "Iniciando juego...\n";
-    sleep_for(chrono::seconds(2));
+    RunCharacterMenu();
 }
 
 void About() {
