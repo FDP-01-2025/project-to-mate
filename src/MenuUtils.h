@@ -71,7 +71,7 @@ vector<string> SivarmonMap={
 };
 
 vector<string> GameName={
-    "                                                                                                                   ",
+    // "                                                                                                                   ",
     "                                                                                                                   ",
     "                               @@@ @       @@              @@@@@     @@@@       @                                  ",
     "                 @@@    @@@@     @@@        @@@@       @@     @@@@    @@@@   @@@@@        @@@@                     ",
@@ -84,7 +84,6 @@ vector<string> GameName={
     "     @@@@@@@@@                                                                                     @@@      @      ",
     "                                                                                                                   "
 };
-
 
 map<int, int> ColorByIndex = {
     {0, 91}, {1, 200}, {2, 129}, {3, 78},
@@ -123,20 +122,29 @@ void PrintSivarMesagge(const vector<string>& map) {
 
         for (char ch : line) {
             int color = ColorID.count(ch) ? ColorID[ch] : 16;
-            cout << "\033[48;5;" << color << "m "; 
+            cout << "\033[48;5;" << ColorID[ch] << "m "; 
         }
 
         cout << RESET << endl;
     }
+    cout<<endl;
 }
 
 void PrintSivarMapLeft() {
+    COORD cursorPos;
+    cursorPos.X = 0;
+    cursorPos.Y = (int)GameName.size() + 1;
+
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), cursorPos);
+
     for (const string& line : SivarmonMap) {
         for (char ch : line) {
-            int color = ColorID.count(ch) ? ColorID[ch] : 16;
-            cout << "\033[48;5;" << color << "m ";
+            if (ColorID.count(ch))
+                cout << "\033[48;5;" << ColorID[ch] << "m " << RESET;
+            else
+                cout << " ";
         }
-        cout << RESET << endl;
+        cout << '\n';
     }
 }
 
@@ -144,11 +152,13 @@ void PrintMenuRight(int selected, int mapHeight) {
     int rows, cols;
     GetConsoleSize(rows, cols);
 
+    int rightPadding = SivarmonMap[0].size() + 10;
+   
     COORD cursorPos;
 
     for (int i = 0; i < (int)SivarMenu.size(); ++i) {
-        cursorPos.X = SivarmonMap[0].size()+10;
-        cursorPos.Y = (i + 1)+GameName.size()+10;
+        cursorPos.X = rightPadding;
+        cursorPos.Y = (i + 1) + GameName.size() + 3;
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), cursorPos);
 
         string colorCode = "\033[48;5;" + to_string(ColorByIndex[i]) + "m";
@@ -156,15 +166,14 @@ void PrintMenuRight(int selected, int mapHeight) {
         if (i == selected)
             cout << BG_BLACK << colorFont << NEGRITA << " > " << SivarMenu[i] << " < " << RESET;
         else
-            cout << colorCode << "   " << FG_BLACK<< SivarMenu[i] << "   " << RESET;
+            cout << colorCode << "   " << FG_BLACK << SivarMenu[i] << "   " << RESET;
     }
-    cursorPos.X = SivarmonMap[0].size()+10;
-    cursorPos.Y = (int)SivarMenu.size() + 1;
+
+    cursorPos.X = rightPadding;
+    cursorPos.Y = (int)SivarMenu.size() + GameName.size() + 22;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), cursorPos);
-    cout<<RESET<<endl;
-
+    cout << RESET << endl;
 }
-
 
 vector<string> LoadingClock={
     "rrrrrrrrrrrrr",
