@@ -1,7 +1,5 @@
-#include "src/header.h"
-#include "src/menu.cpp"
-#include "src/utils.cpp"
 #include "src/game.cpp"
+
 int main() {
     system("chcp 850 > nul");
 
@@ -11,7 +9,7 @@ int main() {
         "Credits",
         "Leave"
     };
-
+    FillColor();
     int choice = 0;
     char key;
     mainPageLogo();
