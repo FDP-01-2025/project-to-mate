@@ -5,6 +5,19 @@ int SelecterCharacter = 0;
 void StartGameMenu(){
     system("cls");
     PrintSivarMesagge(GameName);
+    int rows, cols;
+    GetConsoleSize(rows, cols);
+
+    string CharElection = "CHOOSE YOUR CHARACTER";
+
+    COORD cursorPos;
+    cursorPos.X = (cols - CharElection.size()) / 2;
+    cursorPos.Y = (int)GameName.size();
+
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), cursorPos);
+    cout << FLICKERING << NEGRITA << BG_BLACK << FG_WHITE  << CharElection << RESET << flush;
+    cout<<endl;
+
 }
 
 void NotFoundMessage(){
@@ -17,14 +30,14 @@ void NotFoundMessage(){
 }
 
 void RunInteractiveMenu() {
-    StartGameMenu(); 
+    StartGameMenu();
     PrintSivarMapLeft();
     PrintMenuRight(SelecterCharacter, (int)SivarmonMap.size());
 
     while (true) {
         if (_kbhit()) {
             int key = _getch();
-            if (key == 224) { // teclas de flecha
+            if (key == 224) {
                 key = _getch();
                 if (key == 72) SelecterCharacter = (SelecterCharacter - 1 + (int)SivarMenu.size()) % SivarMenu.size(); // ARRIBA
                 if (key == 80) SelecterCharacter = (SelecterCharacter + 1) % SivarMenu.size(); // ABAJO
@@ -44,7 +57,6 @@ void RunInteractiveMenu() {
     }
 }
 
-
 void RunCharacterMenu(){
     system("cls");
     FillColor();
@@ -61,7 +73,7 @@ void RunCharacterMenu(){
         sleep_for(1s);
         
     }
-
+    StartGameMenu();
     RunInteractiveMenu();
     sleep_for(600ms);
     system("cls");
