@@ -158,12 +158,9 @@ void PrintMenuRight(int selected, int mapHeight) {
         else
             cout << colorCode << "   " << FG_BLACK<< SivarMenu[i] << "   " << RESET;
     }
-
-    // Línea inferior del menú
     cursorPos.X = SivarmonMap[0].size()+10;
     cursorPos.Y = (int)SivarMenu.size() + 1;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), cursorPos);
-    // cout << FG_WHITE << NEGRITA << "------------------------------------" << RESET;
     cout<<RESET<<endl;
 
 }
