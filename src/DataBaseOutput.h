@@ -1,6 +1,8 @@
 // Includes de librerias necesarias
 #include <iostream>
 #include <fstream>
+#include <cctype>
+#include <sstream>
 using namespace std;
 
 //Creacion de las estructuras necesarias
@@ -18,8 +20,18 @@ struct SivarmonDataBase
 
 };
 
+struct MovimientosDataBase{
+    int id;
+    string nombre;
+    int idTipo;
+    int accion;
+    float numero;
+    string descripcion;
+
+};
+
 //Funcion para llamar informacion de un sivarmon especifica
-SivarmonDataBase Sivarmones(int eleccion){
+SivarmonDataBase SivarmonesCall(int eleccion){
     SivarmonDataBase Salida;
     ifstream sivarmons("src/DataBase/Sivarmones.txt");
     if (sivarmons.is_open())
@@ -30,14 +42,52 @@ SivarmonDataBase Sivarmones(int eleccion){
         {
             if (Salida.id == eleccion)
             {
+                sivarmons.close();
                 return Salida;
             }
         }
+
+        return SivarmonDataBase{};
         
     }else
     {
         cout<<"Error!";
+        return SivarmonDataBase{};
     }
     
     return SivarmonDataBase{};
+}
+
+MovimientosDataBase MovimientosCall(int eleccion) {
+    MovimientosDataBase Salida;
+    ifstream movimientos("src/DataBase/Movimientos.txt");
+
+    if (movimientos.is_open()) {
+         while (movimientos >> Salida.id >> Salida.nombre >> Salida.idTipo >> Salida.accion >> Salida.numero) {
+        movimientos.ignore(); // quitar el \n restante
+
+        string linea, descripcionTotal;
+        while (getline(movimientos, linea)) {
+            if (linea.empty()) break; // línea vacía: fin de este bloque
+            descripcionTotal += linea + '\n';
+        }
+
+        Salida.descripcion = descripcionTotal;
+
+        if (Salida.id == eleccion) {
+            movimientos.close();
+            return Salida;
+        }
+    }
+
+    cerr << "No se encontró el movimiento con ID " << eleccion << endl;
+    return {};
+    }else
+    {
+        cerr << "Error al abrir el archivo.\n";
+        return {};
+    }
+    
+
+   
 }
