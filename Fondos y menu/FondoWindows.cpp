@@ -17,7 +17,7 @@ void habilitarANSI()
     DWORD modo = 0;
     if (GetConsoleMode(hOut, &modo))
     {
-        modo |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+        modo = ENABLE_VIRTUAL_TERMINAL_PROCESSING;
         SetConsoleMode(hOut, modo);
     }
 }
