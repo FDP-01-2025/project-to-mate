@@ -7,13 +7,9 @@ int main()
     int prueba = 21;
     cin>>prueba;
 
-    SivarmonDataBase Jugador = Sivarmones(prueba);
+    TiposDataBase Jugador = TiposCall(prueba);
 
-    cout<<" --- " << Jugador.id << " - " << Jugador.nombre << " - " << Jugador.idTipo<< " - "
-    << Jugador.vida << " - " << Jugador.defensa << " - " << Jugador.velocidad << " - "
-    << Jugador.idMovimientos[0] << ", " << Jugador.idMovimientos[1] << ", " << Jugador.idMovimientos[2]
-    << " - " << Jugador.idSprite;
-
+    cout<<" --- " << Jugador.id << " - " << Jugador.nombre;
 
     return 0;
 }

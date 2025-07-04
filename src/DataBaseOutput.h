@@ -30,6 +30,11 @@ struct MovimientosDataBase{
 
 };
 
+struct TiposDataBase{
+    int id;
+    string nombre;
+};
+
 //Funcion para llamar informacion de un sivarmon especifica
 SivarmonDataBase SivarmonesCall(int eleccion){
     SivarmonDataBase Salida;
@@ -80,14 +85,30 @@ MovimientosDataBase MovimientosCall(int eleccion) {
         }
     }
 
-    cerr << "No se encontró el movimiento con ID " << eleccion << endl;
+    cout << "No se encontró el movimiento con ID " << eleccion << endl;
     return {};
     }else
     {
-        cerr << "Error al abrir el archivo.\n";
+        cout << "Error al abrir el archivo.\n";
         return {};
     }
     
 
    
+}
+
+TiposDataBase TiposCall(int seleccion){
+    TiposDataBase Salida;
+    ifstream Tipos("src/DataBase/Tipos.txt");
+    while (Tipos >> Salida.id >> Salida.nombre)
+    {
+        if (seleccion == Salida.id)
+        {
+            return Salida;
+        }
+        
+    }
+
+    return TiposDataBase{};
+    
 }
