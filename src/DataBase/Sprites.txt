@@ -1,0 +1,19 @@
+1
+            qqqqqqq    
+ ppppppppp  qqqqqqq    
+pppppppppppqqqq  qq    
+pppppppppppp qqqqqq    
+ppppppppppp            
+  qq    qq         
+  oo    oo       
+
+
+2
+            AAAAAAA    
+ ppppppppp  AAAAAAA    
+pppppppppppAAA  AA    
+pppppppppppp AAAAAA    
+ppppppppppp            
+  AA    AA         
+  oo    oo               
+       
