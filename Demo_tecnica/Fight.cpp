@@ -1,8 +1,37 @@
 #include <BossFondo2.h>
 #include <SpritsDemo.h>
 #include <iostream>
+#include "sprin.h"
 
 int main() {
+
+    srand(time(0));
+
+    int opcionJugador;
+
+    cout << "Elige tu combatiente (1-3):\n";
+    cout << "1:" << sprite1 << "\n";
+    cout << "2:" << sprite2 << "\n";
+    cout << "3:" << sprite3 << "\n";
+    cout << "Tu elección: ";
+    cin >> opcionJugador;
+
+    // Validar entrada del jugador
+    if (opcionJugador < 1 || opcionJugador > 3) {
+        cout << "Opción inválida. Saliendo del juego.\n";
+        return 1;
+    }
+
+
+    string sprites[] = {sprite1, sprite2, sprite3};
+
+    string combatienteJugador = sprites[opcionJugador - 1];
+    int opcionCPU = rand() % 3; 
+    string combatienteCPU = sprites[opcionCPU];
+
+    cout << "Jugador:\n" << combatienteJugador << endl;
+    cout << "VS\n";
+    cout << "CPU:\n" << combatienteCPU << endl;
 
     srand(time(nullptr));
 
@@ -59,8 +88,8 @@ int main() {
     while (player.hp > 0 && enemy.hp > 0) {
         clearScreen();              // Limpia toda la pantalla
         fondoConOvalos();           // Dibuja el fondo PRIMERO
-        drawAsciiArt(raccoon_ascii, 50, 48); // Dibuja sprites encima del fondo
-        drawAsciiArt(enemy_ascii, 165, 48);
+        // drawAsciiArt(raccoon_ascii, 50, 48); // Dibuja sprites encima del fondo
+        // drawAsciiArt(enemy_ascii, 165, 48);
         drawHealth(player, 50, 60);
         drawHealth(enemy, 165, 60);
         drawMenu(cursorX, cursorY);

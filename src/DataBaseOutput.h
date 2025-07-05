@@ -3,6 +3,8 @@
 #include <fstream>
 #include <cctype>
 #include <sstream>
+#include <vector>
+#include <string>
 using namespace std;
 
 //Creacion de las estructuras necesarias
@@ -35,12 +37,18 @@ struct TiposDataBase{
     string nombre;
 };
 
+struct SpritesDataBase{
+    int id;
+    vector<string> Sprite;
+};
+
 //Funcion para llamar informacion de un sivarmon especifica
 SivarmonDataBase SivarmonesCall(int eleccion){
     SivarmonDataBase Salida;
     ifstream sivarmons("src/DataBase/Sivarmones.txt");
     if (sivarmons.is_open())
     {
+        
         while (sivarmons >> Salida.id >> Salida.nombre >> Salida.idTipo >> Salida.vida >>
              Salida.defensa >> Salida.velocidad >> Salida.idMovimientos[0] >> Salida.idMovimientos[1]
              >> Salida.idMovimientos[2] >> Salida.idMovimientos[3] >> Salida.idSprite)
@@ -100,7 +108,9 @@ MovimientosDataBase MovimientosCall(int eleccion) {
 TiposDataBase TiposCall(int seleccion){
     TiposDataBase Salida;
     ifstream Tipos("src/DataBase/Tipos.txt");
-    while (Tipos >> Salida.id >> Salida.nombre)
+   if (Tipos.is_open())
+   {
+     while (Tipos >> Salida.id >> Salida.nombre)
     {
         if (seleccion == Salida.id)
         {
@@ -109,6 +119,84 @@ TiposDataBase TiposCall(int seleccion){
         
     }
 
+    cout<<"No se encontro el movimiento. ";
+     return TiposDataBase{};
+
+
+   }else
+   {
+    cout<<"Erorr! el archivo no se abrio.";
+     return TiposDataBase{};
+   }
+   
+   
+
     return TiposDataBase{};
     
 }
+
+SpritesDataBase SpritesCall(int seleccion){
+    SpritesDataBase Salida;
+    ifstream Sprites("src/DataBase/Sprites.txt");
+    if (Sprites.is_open())
+    {
+        
+        string linea;
+        string lineaGuardada;
+        bool usarGuardada = false;
+
+        while (true) {
+            if (!usarGuardada) {
+                if (!getline(Sprites, linea)) break;
+            } else {
+                linea = lineaGuardada;
+                usarGuardada = false;
+            }
+
+            if (!linea.empty() && linea.find_first_not_of("0123456789") == string::npos)
+            {
+                int idObtenido = stoi(linea);
+                vector<string> spriteTemporal;
+
+                while (getline(Sprites, linea))
+                {
+                    if (linea.empty())
+                    {
+                        break;
+                    }
+
+                    if (!linea.empty() && linea.find_first_not_of("0123456789") == string::npos)
+                    {
+                       lineaGuardada = linea;
+                        usarGuardada = true;
+                        break;
+                    }
+
+                     spriteTemporal.push_back(linea);
+                    
+                }
+
+                if (seleccion == idObtenido)
+                {
+                    Salida.id = idObtenido;
+                    Salida.Sprite = spriteTemporal;
+                    break;
+                }
+                
+
+                             
+            }
+            
+        }
+
+        return Salida;
+
+
+        
+    }else
+    {
+        cout<<"No se abrio archivo";
+        return SpritesDataBase{};
+    }    
+}
+
