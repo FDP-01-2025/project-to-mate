@@ -1,7 +1,10 @@
 #include "GameStartMenu.h"
+#include "dialogues.h"
 
 void GameStart() {
     RunCharacterMenu();
+    PrintBackgroundDialogue("TowerBackground.txt", TowerColorID, "FirstBattle.txt");
+
 }
 
 void About() {
