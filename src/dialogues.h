@@ -85,7 +85,8 @@ void PrintBackgroundDialogue(const string& filename, const map<char, int>& Color
     }
 
     vector<string> dialogue;
-    ifstream file(dialogueName);
+    string DialogueFile = "src/" + dialogueName;
+    ifstream file(DialogueFile);
 
     if (file.is_open()) {
         while (getline(file, line)) {
