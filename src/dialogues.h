@@ -57,7 +57,7 @@ void PrintTypewriter(const string& text) {
     }
 }
 
-void PrintBackgroundDialogue(const string& filename, const map<char, int>& ColorMap, const vector<string>& dialogue){
+void PrintBackgroundDialogue(const string& filename, const map<char, int>& ColorMap, const string& dialogueName){
     system("cls");
     int rows, columns;
     GetConsoleSize(rows, columns);
@@ -83,6 +83,17 @@ void PrintBackgroundDialogue(const string& filename, const map<char, int>& Color
         }
         file.close();
     }
+
+    vector<string> dialogue;
+    ifstream file(dialogueName);
+
+    if (file.is_open()) {
+        while (getline(file, line)) {
+            dialogue.push_back(line);
+        }
+        file.close();
+    }
+
     int currentRow = backgroundLines + 2;
     int dialogueHeight = 4;
     int boxTopRow = backgroundLines + 1;
@@ -97,7 +108,6 @@ void PrintBackgroundDialogue(const string& filename, const map<char, int>& Color
             cout << "\033[" << (boxTopRow + i) << ";" << boxLeftCol << "H";
             cout << RESET << BG_WHITE << string(maxLineLength, ' ') << RESET;
         }
-
 
         int linePadding = (maxLineLength - (int)line.length()) / 2;
         if (linePadding < 0) linePadding = 0;
@@ -127,18 +137,7 @@ void PrintBackgroundDialogue(const string& filename, const map<char, int>& Color
                 << BG_WHITE << string(maxLineLength, ' ') << RESET;
         }
     }
-
 }
-
-vector<string> dialogue1 = {
-    "SOME CHALLENGES ARE COMING",
-    "GET READY FOR THE BATTLE",
-    "BATTLE IS COMING"
-};
-
-vector<string> dialogue2 = {
-    "...."
-};
 
 /*int main(){
     PrintBackgroundDialogue("ParadiseBackground.txt", ParadiseColorID, dialogue1);
