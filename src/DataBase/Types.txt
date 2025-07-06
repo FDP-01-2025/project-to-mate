@@ -1,4 +1,5 @@
-1 neutro
+1 normal
 2 agua
 3 fuego
 4 planta
+5 Psiquico
