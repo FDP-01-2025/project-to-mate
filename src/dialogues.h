@@ -1,6 +1,4 @@
 #include "header.h"
-#include "utils.cpp"
-#include <fstream>
 
 map<char, int> ParadiseColorID = {
     {'|', 249},
@@ -61,8 +59,8 @@ void PrintBackgroundDialogue(const string& filename, const map<char, int>& Color
     system("cls");
     int rows, columns;
     GetConsoleSize(rows, columns);
-
-    ifstream file(filename);
+    string NewFileName= "src/"+filename;
+    ifstream file(NewFileName);
     string line;
     int backgroundLines = 0, maxLineLength=0;
 
@@ -83,16 +81,21 @@ void PrintBackgroundDialogue(const string& filename, const map<char, int>& Color
         }
         file.close();
     }
+    else {
+        // cout<<"ERROR\n";
+    }
 
     vector<string> dialogue;
-    string DialogueFile = "src/" + dialogueName;
-    ifstream file(DialogueFile);
+    string DialogueFile = "src/BattleDialogues/" + dialogueName;
+    ifstream fila (DialogueFile);
 
-    if (file.is_open()) {
-        while (getline(file, line)) {
+    if (fila.is_open()) {
+        while (getline(fila, line)) {
             dialogue.push_back(line);
         }
-        file.close();
+        fila.close();
+    } else{
+        // cout<<"ERROR\n";
     }
 
     int currentRow = backgroundLines + 2;
@@ -138,6 +141,8 @@ void PrintBackgroundDialogue(const string& filename, const map<char, int>& Color
                 << BG_WHITE << string(maxLineLength, ' ') << RESET;
         }
     }
+    sleep_for(3s);
+    system("cls");
 }
 
 /*int main(){
