@@ -1,0 +1,7 @@
+1 Casco 2 0.4
+El sivarmon es equipado con un asco que le ayuda
+a reducir el damage del siguiente ataque.
+
+2 Pupusa 1 25
+El sivarmon es alimentado con una rica Pupusa
+de frijol con queso recuperando vitalidad.
