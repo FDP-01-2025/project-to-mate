@@ -1,13 +1,13 @@
-#include <iostream>
-#include <string>
-#include <cstdlib>  
-#include <ctime>   
+
+   
 #include "sprin.h"
+#include <ctime>
+#include <windows.h>
 using namespace std;
 
 
 int main() {
-
+    SetConsoleOutputCP(CP_UTF8);
     srand(time(0));
 
     int opcionJugador;
