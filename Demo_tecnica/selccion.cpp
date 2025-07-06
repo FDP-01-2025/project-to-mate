@@ -1,8 +1,6 @@
-
-   
+#include <windows.h>
 #include "sprin.h"
 #include <ctime>
-#include <windows.h>
 using namespace std;
 
 
@@ -16,6 +14,7 @@ int main() {
     cout << "1:" << sprite1 << "\n";
     cout << "2:" << sprite2 << "\n";
     cout << "3:" << sprite3 << "\n";
+    cout << "3:" << sprite5 << "\n";
     cout << "Tu elección: ";
     cin >> opcionJugador;
 

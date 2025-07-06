@@ -1,7 +1,7 @@
-
+#include <windows.h>
+#include <iostream>
 #include <string>
 #include <cstdlib> //sirve para leer la seleccion
-#include <iostream>
 
 
 using namespace std;
@@ -52,6 +52,7 @@ string sprite3 = R"(
                █░      █        █      █▓                  
                  █████████████████████▓                                     
 )";
+
 string sprite5 = R"(
                                                            
                                      █████                 
@@ -83,10 +84,10 @@ string sprite5 = R"(
                                                            
 )";
 
-string sprite6 = R"()";
-string sprite7 = R"()";
-string sprite8 = R"()";
-string sprite9 = R"()";
+//string sprite6 = R"()";
+//string sprite7 = R"()";
+//string sprite8 = R"()";
+//string sprite9 = R"()";
 
 // Character player = {"Raccoon", 30, 30};
 // Character enemy  = {"Wild Cat", 30, 30};

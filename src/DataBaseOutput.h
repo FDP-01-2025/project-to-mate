@@ -42,10 +42,19 @@ struct SpritesDataBase{
     vector<string> Sprite;
 };
 
+struct ObjetosDataBase{
+    int id;
+    string nombre;
+    int accion; // 1= heal, 2= buff defense, 3= buff speed, 4= buff attack.
+    float numero;
+    string descripcion;
+
+};
+
 //Funcion para llamar informacion de un sivarmon especifica
 SivarmonDataBase SivarmonesCall(int eleccion){
     SivarmonDataBase Salida;
-    ifstream sivarmons("src/DataBase/Sivarmones.txt");
+    ifstream sivarmons("src/DataBase/Sivarmons.txt");
     if (sivarmons.is_open())
     {
         
@@ -73,7 +82,7 @@ SivarmonDataBase SivarmonesCall(int eleccion){
 
 MovimientosDataBase MovimientosCall(int eleccion) {
     MovimientosDataBase Salida;
-    ifstream movimientos("src/DataBase/Movimientos.txt");
+    ifstream movimientos("src/DataBase/Movements.txt");
 
     if (movimientos.is_open()) {
          while (movimientos >> Salida.id >> Salida.nombre >> Salida.idTipo >> Salida.accion >> Salida.numero) {
@@ -107,7 +116,7 @@ MovimientosDataBase MovimientosCall(int eleccion) {
 
 TiposDataBase TiposCall(int seleccion){
     TiposDataBase Salida;
-    ifstream Tipos("src/DataBase/Tipos.txt");
+    ifstream Tipos("src/DataBase/Types.txt");
    if (Tipos.is_open())
    {
      while (Tipos >> Salida.id >> Salida.nombre)
@@ -198,5 +207,37 @@ SpritesDataBase SpritesCall(int seleccion){
         cout<<"No se abrio archivo";
         return SpritesDataBase{};
     }    
+}
+
+ObjetosDataBase ObjetosCall(int seleccion){
+    ObjetosDataBase Salida;
+    ifstream Objetos("src/DataBase/Objets.txt");
+
+    if (Objetos.is_open()) {
+         while (Objetos >> Salida.id >> Salida.nombre >> Salida.accion >> Salida.numero) {
+        Objetos.ignore(); // quitar el \n restante
+
+        string linea, descripcionTotal;
+        while (getline(Objetos, linea)) {
+            if (linea.empty()) break; // línea vacía: fin de este bloque
+            descripcionTotal += linea + '\n';
+        }
+
+        Salida.descripcion = descripcionTotal;
+
+        if (Salida.id == seleccion) {
+            Objetos.close();
+            return Salida;
+        }
+    }
+
+    cout << "No se encontró el movimiento con ID " << seleccion << endl;
+    return {};
+    }else
+    {
+        cout << "Error al abrir el archivo.\n";
+        return {};
+    }
+
 }
 

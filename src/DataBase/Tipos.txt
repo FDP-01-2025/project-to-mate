@@ -1,4 +1,0 @@
-1 neutro
-2 agua
-3 fuego
-4 planta
