@@ -1,4 +1,4 @@
-1 Jesse_Pinkman 1 100 0.15 0.05 1 4 5 6 1
+1 Jesse_Pinkman 1 100 0.15 5 1 4 5 6 1
 2 Martian_Manhunter 1 100 0.05 5 3 9 8 7 2
 3 Bearman 1 100 0.05 20 7 1 2 3 3
 4 Question 1 100 0.05 20 7 1 2 3 4
