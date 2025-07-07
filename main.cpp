@@ -1,6 +1,7 @@
 #include "src/game.cpp"
 
 int main() {
+    system("cls");
     system("chcp 850 > nul");
 
     vector<string> MainMenu = {
