@@ -4,8 +4,6 @@
 
 void GameStart() {
     RunCharacterMenu();
-    //First challengue
-    PrintBackgroundDialogue("TowerBackground.txt", TowerColorID, "FirstBattle.txt");
     
     vector<vector<string>> FightBattles = {
         {"FirstBattle.txt", "FirstBattleDefeat.txt", "FirstBattleWin.txt", "FirstBattleWin.txt"},
