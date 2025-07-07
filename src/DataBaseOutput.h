@@ -8,7 +8,7 @@ struct SivarmonDataBase{
     int vida;// Life of each Sivarmon, example: 100
     float defensa;// Defense of each Sivarmon, example: 0.25
     int velocidad;// Speed of each Sivarmon, example: 45
-    int idMovimientos[3];//Array with 4 moves identificators , example: [1,3,4,2].
+    int idMovimientos[4];//Array with 4 moves identificators , example: [1,3,4,2].
     int idSprite;// Sprite Identificator.
 
 };
