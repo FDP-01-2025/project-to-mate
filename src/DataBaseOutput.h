@@ -148,37 +148,33 @@ MovimientosDataBase MovimientosCall(int eleccion) {
 TiposDataBase TiposCall(int seleccion){
     //Define variables
     TiposDataBase Salida;
+    TiposDataBase TipoDefault; //In the case there a error with the id we are looking for
+    bool encontradoDefault = false;
     ifstream Tipos("src/DataBase/Types.txt");
     
     //Check if the file open.
     if (Tipos.is_open())
    {
     //We make a loop to travel all the file and asign the information.
-     while (Tipos >> Salida.id >> Salida.nombre)
-    {
+    while (Tipos >> Salida.id >> Salida.nombre) {
         //if the id matches with variable that receives the function then return the information
+        if (!encontradoDefault)
+        {
+            TipoDefault = Salida;
+            encontradoDefault = true;
+        }
         if (seleccion == Salida.id)
         {
-            return Salida;
+                return Salida;
         }
         
     }
-
     //Case if the the id doesnt match
-    cout<<"No se encontro el movimiento. ";
-     return TiposDataBase{};
-
-
-   }else
-   {
-    //case if the file didnt open.
-    cout<<"Erorr! el archivo no se abrio.";
-     return TiposDataBase{};
-   }
-   
-   
-
-    return TiposDataBase{};
+    //cout<<"No se encontro el movimiento. ";
+        return TipoDefault;
+    }
+    //Any other case
+    return TipoDefault;
     
 }
 
