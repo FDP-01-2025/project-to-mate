@@ -24,6 +24,10 @@ void mostrarMenu(const vector<string>& MainMenu, int choice);
 void GameStart();
 void About();
 void Credits();
+void StartGameMenu();
+void PrintTypewriter(const string& text);
+void NotFoundMessage();
+void PrintBackgroundDialogue(const string& filename, const map<char, int>& ColorMap, const string& dialogueName);
 
 
 // RESET and styles
