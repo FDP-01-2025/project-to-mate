@@ -43,7 +43,7 @@ El sivarmon devuelve el ataque recivido.
 El sivarmon aprovecha a hacer una danza la cual
 aumenta su defensa.
 
-13 Pun;o_mojado 2 1 30
+13 Punno_mojado 2 1 30
 El sivarmon lanza un golpe potenciado por un chorro de agua
 haciendole damage de agua.
 
