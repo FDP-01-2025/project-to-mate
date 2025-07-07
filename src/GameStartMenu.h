@@ -50,7 +50,7 @@ void RunInteractiveMenu() {
                     PrintMenuRight(SelecterCharacter, (int)SivarmonMap.size());
                     continue;
                 }
-                break;
+                return;
             }
             PrintMenuRight(SelecterCharacter, (int)SivarmonMap.size());
         }
@@ -75,6 +75,7 @@ void RunCharacterMenu(){
     }
     StartGameMenu();
     RunInteractiveMenu();
+    // cout<<"Aqui si llega\n";
     sleep_for(600ms);
-    system("cls");
+    // system("cls");
 }

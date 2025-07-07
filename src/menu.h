@@ -38,7 +38,7 @@ void mostrarMenu(const vector<string>& MainMenu, int choice) {
     
     int x = (columns - BoxWide) / 2;
     int y = (rows - BoxHeight) / 2;
-
+   
     system("cls");
 
     for (int i = 0; i < y; ++i) cout << endl;
