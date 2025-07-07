@@ -1,12 +1,5 @@
-// Includes of the necessary libraries
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <windows.h>
-using namespace std;
-
 //Creation of the necessary libraries.
+#include "header.h"
 //The order of the structures, is the order of how each group of data is in its respective txt.
 struct SivarmonDataBase{
     int id; //Identificator of each Sivarmon.
@@ -328,4 +321,3 @@ ObjetosDataBase ObjetosCall(int seleccion){
     }
 
 }
-
