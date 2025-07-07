@@ -17,18 +17,41 @@ using namespace std;
 using namespace std::this_thread;
 using namespace std::chrono_literals;
 
-// Funtions
+//Structs
+struct SivarmonDataBase;
+struct MovimientosDataBase;
+struct TiposDataBase;
+struct SpritesDataBase;
+struct ObjetosDataBase;
+
+// Funtions:
+//Utils and Main menu
 void GetConsoleSize(int &rows, int &columns);
 void mainPageLogo();
 void mostrarMenu(const vector<string>& MainMenu, int choice);
 void GameStart();
 void About();
 void Credits();
+//GameStartMenu and dialogue
 void StartGameMenu();
 void PrintTypewriter(const string& text);
 void NotFoundMessage();
 void PrintBackgroundDialogue(const string& filename, const map<char, int>& ColorMap, const string& dialogueName);
-
+void RunCharacterMenu();
+//BattleInterface
+void enableANSIColors();
+bool isInOval(int x, int y, int centerX, int centerY, int radiusX, int radiusY);
+void drawBackgroundWithOvals();
+//FightBackground
+int PrintSelectionMenu(const vector<string>& names, const vector<string>& typeNames, int boxLeftCol, int boxTopRow, int boxWidth);
+void PrintBattleEnemies(int SivarmonSelected, int Enemy);
+void MovesMenu(int SivarmonSelected, int Enemy);
+//DataBase
+SivarmonDataBase SivarmonesCall(int eleccion);
+MovimientosDataBase MovimientosCall(int eleccion);
+TiposDataBase TiposCall(int seleccion);
+SpritesDataBase SpritesCall(int seleccion);
+ObjetosDataBase ObjetosCall(int seleccion);
 
 // RESET and styles
 const string RESET    = "\033[0m";
@@ -66,4 +89,10 @@ const string BG_PINK = "\033[48;5;163m";
 const string BG_LIGHTBLUE = "\033[48;5;111m";
 const string BG_ORANGE ="\033[48;5;216m";
 const string BG_DEEP_BLUE ="\033[48;5;17m";
+//Battle Backgrounds colors
+#define RESET     "\033[0m"
+#define BACK_BLUE   "\033[48;5;75m"
+#define BACK_GREEN  "\033[48;5;70m"
+#define BACK_WHITE  "\033[48;5;15m"
+
 #endif
