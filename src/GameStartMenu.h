@@ -50,11 +50,13 @@ void RunInteractiveMenu() {
                     PrintMenuRight(SelecterCharacter, (int)SivarmonMap.size());
                     continue;
                 }
+                SelecterCharacter++;
                 return;
             }
             PrintMenuRight(SelecterCharacter, (int)SivarmonMap.size());
         }
     }
+    SelecterCharacter++;
 }
 
 void RunCharacterMenu(){
