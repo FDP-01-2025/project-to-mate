@@ -52,6 +52,9 @@ MovimientosDataBase MovimientosCall(int eleccion);
 TiposDataBase TiposCall(int seleccion);
 SpritesDataBase SpritesCall(int seleccion);
 ObjetosDataBase ObjetosCall(int seleccion);
+//LifeBar
+string GenerateHealthBar(int currentHP, int maxHP);
+void PrintLifeBar (int Health, int TotalHealth);
 
 // RESET and styles
 const string RESET    = "\033[0m";
@@ -89,6 +92,7 @@ const string BG_PINK = "\033[48;5;163m";
 const string BG_LIGHTBLUE = "\033[48;5;111m";
 const string BG_ORANGE ="\033[48;5;216m";
 const string BG_DEEP_BLUE ="\033[48;5;17m";
+
 //Battle Backgrounds colors
 #define RESET     "\033[0m"
 #define BACK_BLUE   "\033[48;5;75m"
