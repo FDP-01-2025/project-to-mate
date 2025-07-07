@@ -1,13 +1,13 @@
-1 Jesse_Pinkman 1 100 0.15 0.05 1 4 5 6 1
+1 Jesse_Pinkman 1 100 0.15 3 1 4 5 6 1
 2 Martian_Manhunter 1 100 0.05 5 3 9 8 7 2
 3 Bearman 1 100 0.05 20 7 1 2 3 3
 4 Question 1 100 0.05 20 7 1 2 3 4
-5 Charmpa 4 100 50 60 4 6 16 17 5
-6 Vicente_Bear 4 100 50 35 14 16 12 5 6
-7 Cadejo 3 100 50 55 2 3 10 19 7
-8 Guachoo 2 100 50 25 13 6 4 12 8
-9 Miguelin 4 100 50 45 12 15 17 3 9
-10 Coconate 2 100 50 50 3 7 8 24 10
-11 Mora 5 100 100 89 1 5 11 14 11
-12 Not_found_Name 5 999 999 99 25 23 22 21
-13 MrSmash 1 100 50 55 6 4 12 14 13
+5 Charmpa 4 100 0.5 60 4 6 16 17 5
+6 Vicente_Bear 4 100 0.5 35 14 16 12 5 6
+7 Cadejo 3 100 0.5 55 2 3 10 19 7
+8 Guachoo 2 100 0.5 25 13 6 4 12 8
+9 Miguelin 4 100 0.5 45 12 15 17 3 9
+10 Coconate 2 100 0.5 50 3 7 8 24 10
+11 Mora 5 100 0.9 89 1 5 11 14 11
+12 Not_found_Name 5 999 0.95 99 25 23 22 21
+13 MrSmash 1 100 0.5 55 6 4 12 14 13
