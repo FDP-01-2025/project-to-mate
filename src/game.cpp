@@ -4,11 +4,41 @@
 
 void GameStart() {
     RunCharacterMenu();
+    //First challengue
     PrintBackgroundDialogue("TowerBackground.txt", TowerColorID, "FirstBattle.txt");
-    int IdEnemy1=3;
-    PrintBattleEnemies(SelecterCharacter, IdEnemy1);
-    MovesMenu(SelecterCharacter, IdEnemy1);
+    
+    vector<vector<string>> FightBattles = {
+        {"FirstBattle.txt", "FirstBattleDefeat.txt", "FirstBattleWin.txt", "FirstBattleWin.txt"},
+        {"SecondBattle.txt", "SecondBattleDefeat.txt", "SecondBattleWin.txt", "SecondBattleWin"},
+        {"FinalBoss.txt", "FinalBossDefeat.txt", "FinalBossNormalWin.txt, FinalBossGoodWin.txt"},
+        {"SecretBoss.txt", "SecretBossDefeat.txt", "SecretBossNormalWin.txt", "SecretBossGoodWin.txt"},
+        {"LeguePresident.txt", "LeaguePresidentDefeat.txt", "LeaguePresidentWin.txt", "LeguePresidentWin.cpp"}
+    };
+    
+    bool Defeat = false, NormalWin = false, GoodWin = false;
+    //Battle basic structure
+    for(int battle=0; battle < 5; battle++) {
+        int IdEnemy1=3; // Change based on the enemy
+        PrintBackgroundDialogue("TowerBackground.txt", TowerColorID, FightBattles[battle][0]);
+        
+        //FIGHT LOOKS
+        PrintBattleEnemies(SelecterCharacter, IdEnemy1);
+        MovesMenu(SelecterCharacter, IdEnemy1);
+        
+        //HERE GOES THE BATTLE CHANGES
 
+        if(defeat){
+            PrintBackgroundDialogue("YouWin.txt", YourWinColorID, FightBattles[battle][1]);
+            return; //Go back to the main menu
+        }
+        else if(NormalWin){
+            PrintBackgroundDialogue("Paradise.txt", ParadiseColorID, FightBattles[battle][2]);
+        }
+        else{
+            PrintBackgroundDialogue("Paradise.txt", TowerColorID, FightBattles[battle][3]);
+        }
+    }
+    
 }
 
 void About() {
