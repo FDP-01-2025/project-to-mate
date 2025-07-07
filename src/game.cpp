@@ -1,9 +1,13 @@
 #include "GameStartMenu.h"
 #include "dialogues.h"
+#include "BattleInterface.h"
 
 void GameStart() {
     RunCharacterMenu();
     PrintBackgroundDialogue("TowerBackground.txt", TowerColorID, "FirstBattle.txt");
+    int IdEnemy1=3;
+    PrintBattleEnemies(SelecterCharacter, IdEnemy1);
+    MovesMenu(SelecterCharacter, IdEnemy1);
 
 }
 
