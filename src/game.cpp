@@ -1,10 +1,14 @@
 #include "GameStartMenu.h"
 #include "dialogues.h"
 #include "battle.h"
+#include "HealthBar.h"
+
+
 bool no_repetir = true;
 
 
 void GameStart() {
+    SetConsoleOutputCP(CP_UTF8);
     if(no_repetir){
     RunCharacterMenu();
     }
@@ -46,14 +50,14 @@ void GameStart() {
         }
         maxTurns++;
         MovesMenu(SelecterCharacter, IdEnemy1, IsMove, Seleccion );
+        PrintLifeBar(Jugador.vida, VidaOriginal1);
         // cout<<Seleccion << "HOla";
-        
         Battlebucle(Seleccion, siguen, IsMove, modificador, Enemy_modificador,CantObjetos,
         Jugador, Enemy, Defeat, NormalWin, GoodWin, VidaOriginal1);
+        PrintLifeBar(Jugador.vida, VidaOriginal1);
+
 
        } while (siguen && maxTurns<=19);
-       
-        
         
         //HERE GOES THE BATTLE CHANGES
 
@@ -73,6 +77,7 @@ void GameStart() {
         }
         sleep_for(0.1s);
     }
+    FOUND_ED();
     
 }
 
