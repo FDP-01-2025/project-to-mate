@@ -32,7 +32,6 @@ void mostrarMenu(const vector<string>& MainMenu, int choice);
 void GameStart();
 void About();
 void Credits();
-
 //GameStartMenu and dialogue
 void StartGameMenu();
 void PrintTypewriter(const string& text);
@@ -53,14 +52,15 @@ MovimientosDataBase MovimientosCall(int eleccion);
 TiposDataBase TiposCall(int seleccion);
 SpritesDataBase SpritesCall(int seleccion);
 ObjetosDataBase ObjetosCall(int seleccion);
-//LifeBar
-string GenerateHealthBar(int currentHP, int maxHP);
-void PrintLifeBar (int Health, int TotalHealth);
-//Found
-void FoundBackground();
-void printFoundMessage();
-void PrintFoundSprite();
-void FOUND_ED();
+//Battle
+float Efectividades(int& ataque, int& defensa);
+int randomNumber();
+bool EvaluarVida(int& vida);
+void combate(SivarmonDataBase& J1, SivarmonDataBase& E1, vector<MovimientosDataBase>& J1_MoveSet,vector<MovimientosDataBase>& E_MoveSet,
+    vector<ObjetosDataBase>& Obj, int& mov_used, bool& turno, float& modif, float& Emodif, bool& exterior, int (&cant)[4], bool& loose, 
+    bool& Win, bool& SuperWin, int& V1);
+void Battlebucle(int& selected, bool& BattleStill, bool& ItIsMove, float& modificador, float& Enemy_modificador,int (&CantObjetos)[4],
+SivarmonDataBase& J1, SivarmonDataBase& E, bool& loose, bool& win, bool& SuperWin, int& VidaOr);
 
 // RESET and styles
 const string RESET    = "\033[0m";
@@ -98,7 +98,6 @@ const string BG_PINK = "\033[48;5;163m";
 const string BG_LIGHTBLUE = "\033[48;5;111m";
 const string BG_ORANGE ="\033[48;5;216m";
 const string BG_DEEP_BLUE ="\033[48;5;17m";
-
 //Battle Backgrounds colors
 #define RESET     "\033[0m"
 #define BACK_BLUE   "\033[48;5;75m"
