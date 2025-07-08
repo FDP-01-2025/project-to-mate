@@ -1,5 +1,5 @@
 #include "header.h"
-//include all necessary
+
 string GenerateHPBar(int currentHP, int maxHP) {
     SetConsoleOutputCP(CP_UTF8);
     //Set the health bar measures
@@ -31,5 +31,19 @@ void PrintLifeBar (int HP, int maxHP) {
     string hpBar = GenerateHPBar(HP, maxHP);
     cout << BG_GREEN << FG_GREEN << hpBar << RESET; //Print the health bar
     cout << NEGRITA << BG_WHITE << FG_BLACK << "] " << HP << "/" << maxHP << RESET; //And print the current and total health diference
+}
+
+void PrintLifeEnemy(int HP, int maxHP) {
+    //just as before but we are setting the bar to be on the right side of the console
+    SetConsoleOutputCP(CP_UTF8);
+    int rows, cols;
+    GetConsoleSize(rows, cols);
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), { (SHORT)(cols-30), (SHORT)5});
+    cout << NEGRITA << BG_WHITE << FG_ORANGE << " HP: " << RESET;
+    cout << NEGRITA << BG_WHITE << FG_BLACK << "[" << RESET;
+    //First print the beging
+    string hpBar = GenerateHPBar(HP, maxHP);
+    cout << BG_RED << FG_RED << hpBar << RESET; //Print the health bar
+    cout << NEGRITA << BG_WHITE << FG_BLACK << "] " << HP << "/" << maxHP << RESET;
 }
 
