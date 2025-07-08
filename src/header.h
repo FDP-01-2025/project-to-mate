@@ -32,6 +32,7 @@ void mostrarMenu(const vector<string>& MainMenu, int choice);
 void GameStart();
 void About();
 void Credits();
+
 //GameStartMenu and dialogue
 void StartGameMenu();
 void PrintTypewriter(const string& text);
@@ -55,6 +56,11 @@ ObjetosDataBase ObjetosCall(int seleccion);
 //LifeBar
 string GenerateHealthBar(int currentHP, int maxHP);
 void PrintLifeBar (int Health, int TotalHealth);
+//Found
+void FoundBackground();
+void printFoundMessage();
+void PrintFoundSprite();
+void FOUND_ED();
 
 // RESET and styles
 const string RESET    = "\033[0m";
