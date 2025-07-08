@@ -2,6 +2,7 @@
 #include "dialogues.h"
 #include "battle.h"
 #include "HealthBar.h"
+#include "Found.h"
 
 
 bool no_repetir = true;
@@ -77,7 +78,7 @@ void GameStart() {
         }
         sleep_for(0.1s);
     }
-    // FOUND_ED();
+    FOUND_ED();
     
 }
 
