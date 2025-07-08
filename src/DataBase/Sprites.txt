@@ -1,366 +1,357 @@
 1
-              ssssssssssssssss 
-              ssssssssssssssss 
-              ssssnnnnntsss s nnnnn 
-              ssssnnnnntsss s nnnnn 
-              sssssssssssssssssssss
-              sssssssssssssssssssss
-              sssssssssssssssssssss 
-           rrrrrrrrsssssrrrr
-        rrrrrrrrrrrsssssrrrrrr 
-      rrrsssssssss ttttttttttrr
-     rrrrsssssssss ttttttttttrr
-    rrrrrrrrrrsssss ttttttttttsssss
-    rrrrrrrrrrsssss ttttttttttsssss
-     rrrrrrrrrssss ttttttttttt
-      rrrrrrrrssss ttttttttttt
-        rrrrrrssss tttttsssss
-          rrrrsssss tttttsssss
-              sssss     ssssss 
-              sssss     ssssss 
-              sssss     ssssss 
+     ▓▓▓▓▓▓▓▓░░░░░░░░
+     ▓▓▓▓▓▓▓▓░░░░░░░░
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░
+     ████░░░░████░░░░
+     ████░░░░████░░░░
+     ░░░░░░░░░░░░░░░░
+     ░░░░░░░░░░░░░░░░
+     ░░░░░░░░░░░░░░░░
+     ▓▓▓▓▓▓▓▓░░░░░░░░░░░░
+     ▓▓▓▓▓▓▓▓░░░░░░░░░░░░
+ ░░░░▓▓▓▓▓▓▓▓▓▓▓▓░░░░
+ ░░░░▓▓▓▓▓▓▓▓▓▓▓▓░░░░
+     ▓▓▓▓▓▓▓▓▓▓▓▓░░░░
+     ▓▓▓▓▓▓▓▓▓▓▓▓░░░░
+     ▓▓▓▓        ░░░░
+     ▓▓▓▓        ░░░░ 
 
 2
-                     nnnnr           
-        snnnnr     snnnnnnn          
-      snnnnnnnr  snns    srsnr        
-     nnnnnnnnnr snr         nr       
-   snnnnns snnr sns rr  rn  nr       
-  nr        snr ss  nn  nnn sr       
-            snr snns       tnr       
-            snr snnnns   nnnn        
-           snnrsssrnnsrssntsr        
-           snnnnnnnnnnnnnnnnr        
-            snr   snnnnnnnnnr        
-            snr   snnnnnnnnn         
-            snr   snnnnnnnns         
-            snr   snnnnnnnns         
-            snr     nnnnnnn          
-            sns  snnnnnnnnnnnr        
-            snnsrrrnnnnnnnnnrnsr    
+  ▒▒▓▓▓▓    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▒▒▒▒▓▓▓▓    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 
+    ▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 
+ ▒▒▒▒▒▒▒█████▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓ 
+▒▒▒▒   ▓▓▓▓▓▓▓▓▓▓▓▓▓████▓▓▓▓████
+     ▓▓▓▓▓▓▓▓▓▓▓░░░░████░░░░████
+    █▓▓▓▓▓▓▓▓▓▓▓░░░░████░░░░████
+        ▓▓▓▓░░░░░░░░░░░░░░░░░░░░
+        ▓▓▓▓░░░░░░░░░░░░░░░░░░░░
+    ░░░░▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░
+    ░░░░▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░
+        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░
+        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░
+        ░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+        ░░░░░░░░░░░░░░░░░░░░░░░░
+        ░░░░░░░░░░░░░░░░░░░░░░░░
+        ░░░░                ░░░░
 
 3
-                         s                       
-                      ssttss                    
-     sss            ssststsstttss                 
-     sss            ssssssssststss                
-      sss        stststststststttttsss            
-     ssss          tttttttttttttttttss            
-      ssss        srtststssstststtrts    ss       
-       st        sttttrntsssttnstttss stttsss      
-        s        sttttsssssssssststsssstttt       
-       stttttttsssttttsssssssssstttttttss          
-      stttttrrtttttttttssssssssttttttt              
-      stttt   tttttttttttttttttttttttss             
-        sss       tttttttttttttttttt                
-         ss        sttttttttttttttt                
-          s         ssttttttttttss                 
-          ss        srrrtsssstrrts                 
-          ss       sttrtrt   stttrtts              
-                   sttttss   stttttss
-
+    ░░░░    ░░░░░░░░░░░░                        
+    ░░░░    ░░  ░░     ░                  
+    ░░░░░░░░░░░░░░░░░░░░                    
+    ░░░░░░▒░░         ░░                
+    ░░░░▒▒▒▒████▒▒▒▒████                    
+    ████▒▒▒▒████▒▒▒▒████                      
+    ▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                    
+    ▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                 
+░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                 
+░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                   
+    ▓▓▓▓▓▓▓▓░░░░░░░░░░░░▓▓▓▓                   
+    ▓▓▓▓▓▓▓▓░░░░░░░░░░░░▓▓▓▓                
+    ▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░                    
+    ▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░               
+    ▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░                  
+    ▓▓▓▓            ░░░░     
 
 4
-@@@@@@@       @@@@@@@@
-@@@@@@@       @@@@@@@@
-@@@@@ggggggggggggggggg
-@@@@@ggggggggggggggggg
-ggggggggggg@@@@@ggggggg
-ggggggggggg@@@@@ggggggg
-ggggggggggg@@@@@ggggggg
-ggggggggggggggggggggggg
-ggggggggggggggssssssss
-ggggggggggggggssssssss
-gggggggggggggggggggggg
-@@@@@gggsss           @@@@@
-@@@@@gggsss           @@@@@
-@@@@@gggsss           @@@@@
-@@@@@ggggggggg
-@@@@@ggggggggg
-@@@@@ggggggggg
-ggggg        ggggg
-ggggg        ggggg
-ggggg        ggggg
+     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓▓▓▓▓▓▓▓████▓▓▓▓████▓▓▓▓
+    ░░░░████░░░░████
+    ▓▓▓▓░░░░░░░░░░░░
+    ▓▓▓▓░░░░░░░░░░░░
+░░░░▓▓▓▓▓▓▓▓░░░░▓▓▓▓░░░░
+░░░░▓▓▓▓▓▓▓▓░░░░▓▓▓▓░░░░
+    ▓▓▓▓▓▓▓▓░░░░▓▓▓▓
+    ▓▓▓▓▓▓▓▓░░░░▓▓▓▓
+    ▓▓▓▓░░░░░░░░░░░░▒▒▒▒
+    ▓▓▓▓░░░░░░░░░░░░▒▒▒▒
+    ▓▓▓▓░░░░░░░░░░░░▒▒▒▒
+    ░░░░        ░░░░
 
 5
-ssssssss     ssssssss
-ssssssss     ssssssss
-     sssss       sssss
-     sssss       sssss
-     sssssssssssssssss
-     ssss@@@@@sss@@@@@
-     ssss@@@@@sss@@@@@
-     sssssssgggssssss
-     sssssssgggssssss
-sssssssqqqqqqqqqqq   qqqqq
-sssssssqqqqqqqqqqq   qqqqq
-sssssssqqqqqqqqqqq   qqqqq
-gggggssssssssssssgggggqqqqq
-gggggssssssssssssgggggsssss
-gggggssssssssssssgggggsssss
-gggggsssssssssssssssssss
-gggggsssssssssssssssssss
-     sssss       sssss
-     sssss       sssss
-     sssss       sssss
-
+        ░░░░░░░░░░     ░░░░░░░░░░
+        ░░░░░░░░░░     ░░░░░░░░░░
+             ░░░░░          ░░░░░
+             ░░░░░          ░░░░░
+             ░░░░░░░░░░░░░░░░░░░░
+             ░░░░░█████░░░░░█████
+             ░░░░░█████░░░░░█████
+             ░░░░░░░░░░▓▓▓▓▓░░░░░
+             ░░░░░░░░░░▓▓▓▓▓░░░░░
+        ░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒
+        ░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒
+        ░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒
+        ▓▓▓▓▓░░░░░░░░░░░░░░░▓▓▓▓▓▒▒▒▒▒
+        ▓▓▓▓▓░░░░░░░░░░░░░░░▓▓▓▓▓░░░░░
+        ▓▓▓▓▓░░░░░░░░░░░░░░░▓▓▓▓▓░░░░░
+  ▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░
+  ▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░
+       ░░░░░          ░░░░░
+       ░░░░░          ░░░░░
+       ░░░░░          ░░░░░
 
 6
-    ss      ss
-    gg s sssss  s gg s
-  ss   s gggg s  s   ss
-  ss            ss
-  s  g         s  s
-  ss g          gg s
-   ss  ss    s    gs
-  ss  sgg   s o s
-  ss   ss    ss   s
-   ss    ggg    gg   oo
-     go      sggs    ss  g
-        ggg  ggg      s    g
-      g    gggg s    ss    g
-     g    s     s    g s  g
-     s g  g     g s  g s  ss
-     s  s  g s  ss   g g   ss
-   ss   ss  gg ss   ss
-   ss    gg     go    ss
-   ss    ss      s    gg
-   sss    g     gs   ss
-      gggggggggg
+     ████████████           ███████████
+     ████████████           ███████████
+     ██████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+     ██████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+     ▓▓▓▓▓▓▓▓▓▓▓▓█████▓▓▓▓▓▓██████
+     ▓▓▓▓▓▓▓▓▓▓▓▓█████▓▓▓▓▓▓██████
+     ▓▓▓▓▓▓▓▓▓▓▓▓█████▓▓▓▓▓▓██████
+     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░
+     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░
+     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+     ██████▓▓▓▓▓▒░░░░░░░░░░░░░░░░░█████
+     ██████▓▓▓▓▓▒░░░░░░░░░░░░░░░░░█████
+     ██████▓▓▓▓▓▒░░░░░░░░░░░░░░░░░█████
+█████▓▓▓▓▓▓▓▓▓▓▓▒░░░░░░░░░░░▓▓▓▓▓▓
+█████▓▓▓▓▓▓▓▓▓▓▓▒░░░░░░░░░░░▓▓▓▓▓▓
+█████▓▓▓▓▓▓▓▓▓▓▓▒░░░░░░░░░░░▓▓▓▓▓▓
+     ▓▓▓▓▓▓                 ▓▓▓▓▓▓
+     ▓▓▓▓▓▓                 ▓▓▓▓▓▓
+     ▓▓▓▓▓▓                 ▓▓▓▓▓▓
 
-
-7
-        ss                
-      tt tt  ttt          
-    tt s t g tt s         
-   ss t s ttt  ts         
-  sgs ttt ss tttt         
-g s  @   g t s  ss        
- t g   @   g t  ggs       
-          g tttttg   s    
-         tttt s  tttggg   
-         ss t t s  g      
-                   sts    
-     s       tttttt s     
-   t@@@  s tttttt t        
-     s  s ttttss            
-       s tttt  @            
-        ttt g@@@@           
-        ttt   @             
-           sss              
-             s              
-              t             
-    
+7            
+       ░▓▓▓▓        ▓▓▓▓▒                  
+       ░▓▓▓▓        ▓▓▓▓▒                  
+       ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░        ▓▓▓▓      
+       ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░        ▓▓▓▓      
+       ░░░░░▒▒▒▒░░░░▒▒▒▒░        ▓▓▓▓      
+       ░░░░░▒▒▒▒░░░░▒▒▒▒░        ▓▓▓▓      
+   ░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░       ▓▓▓▓      
+   ▒█▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒      
+   ▒▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒      
+   ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒      
+   ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒      
+          ░▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▒▒▒▒▒▒▒      
+          ░▒▓▒▒▓▒▒▓▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒      
+          ░▓▓▓▓░░░░▒▒▒▒▒░░░▒▓▓▓▓▓▒▒      
+          ░▓▓▓█   ▒▒▒▓     ▓▓▓▓▒▒▒▒      
+          ░█▓█▓   ▒▒▒▒     ▓▓▓▓▒▒▒▒      
+          ░▓▓▓▓   ▒▒▒▒     █▓▓▓▒▒▒▒      
+          ░▓▓▓▓   ▒▒▒▒     ▓▓▓▓▓▒▒▒      
 
 8
-       g@@@@@@@@@g        
-     t@gggggggggg@@g      
-    @t       tgggg@@@    
-  t@@@t    g@    ggggg@t  
-  t@t t@  t@  g@  ggggg@t  
-  t@@@@@    st@@g  ggggg@t  
- @t             ggggg@t  
-  t@t           ggggg@t  
-  t@t           g@g g@t  
-  t@t         s@@@@gg@t  
-  t@t       g@@gggggg@t  
-  t@t     s@@gggggggg@@t  
-  t@t       g@@@@@@gg@t  
-    @t           ggg@t  
-     t@@@@@@@@@@@@@@    
+              ░░░░░░░░░░░░░░░░ 
+              ░░░░░░░░░░░░░░░░ 
+              ░░░░░█████▒░░░░▒█████ 
+              ░░░░░█████▒░░░░▒█████ 
+              ░░░░░░░░░░░░░░░░░░░░░
+              ░░░░░░░░░░░░░░░░░░░░░
+              ░░░░░░░░░░░░░░░░░░░░░ 
+           ▓▓▓▓▓▓▓▓░░░░░▓▓▓▓
+        ▓▓▓▓▓▓▓▓▓▓▓░░░░░▓▓▓▓▓▓ 
+      ▓▓▓░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▓▓
+     ▓▓▓▓░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▓▓
+    ▓▓▓▓▓▓▓▓▓▓░░░░░▒▒▒▒▒▒▒▒▒▒▒░░░░░
+    ▓▓▓▓▓▓▓▓▓▓░░░░░▒▒▒▒▒▒▒▒▒▒▒░░░░░
+     ▓▓▓▓▓▓▓▓▓░░░░░▒▒▒▒▒▒▒▒▒▒▒
+      ▓▓▓▓▓▓▓▓░░░░░▒▒▒▒▒▒▒▒▒▒▒
+        ▓▓▓▓▓▓░░░░░▒▒▒▒▒░░░░░░
+          ▓▓▓▓░░░░░▒▒▒▒▒░░░░░░
+              ░░░░░     ░░░░░░ 
+              ░░░░░     ░░░░░░ 
+              ░░░░░     ░░░░░░
 
-
-9
- g tst@@ gggggg@@@@@ gggg  
-    gggg@ @@  ggg @    g  
-    gggg@ @@g ggg  g   g  
- g tst@@ gggggg@@@@@ gggg 
- g tst@@ gggggg@@@@@ gggg   
- g   gg   gggg@@@@@gg@g s  
-     gg   gggg ggg @@ ss g  
-   t gg    ggg ggg   gts@  
- g  ggg g gggg ggg ggs t g  
- gs ggg@  @gg  ggg ggs sg  
- gggggggg @@@ @@g  gsss t  
- g t@  ggg  @   ggg  gsss  
- gggg @gg ggg @@@   gsss  
- g tst@@ gggggg@@@@@ gggg 
- gs ggg@  @gg  ggg ggs sg  
+9                                            
+        ░░░░░░░                              
+      ░░▒▒▒▒▒░░░░        ░░░░░░              
+   ░░░▒▒▒░░░░░░░░░  ░░░░▒▒▒░░▒▒░░░░          
+   ░▒▒▒░░         ░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░        
+   ░▒▒▒░          ▒▒▒▒▒▒▒░░░░▒▒▒░░░▒░        
+   ░▒▒▒░        ░░▒▒▒▒░░░░░░░░░░░░░░░░░      
+   ░▒▒▒░      ░░▒▒▒▒▒▒░░░░▒█▓░░░░▓▓░░▒▒▒░    
+   ░▒▒▒░      ░░▒▒▒▒▒▒░░░░▓██░░░▒██░░▒▒▒▒░   
+   ░▒▒▒░        ░░▒▒▒▒░░░░░▒░░░░░▒▒░▒▒▒░░    
+   ░▒▒▒░            ▒▒▒▒▒░░░░░░░░░░          
+   ░▒▒▒▒▒░        ░▒▒▒▒▒░░░░░░░░░░░          
+    ░░▒▒▒▒▒░      ▒▒▒▒░░░░░░░░░░░░░░░        
+       ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░▒░        
+         ░▒▒▓▒▓▒▓▒▒▒▒▒▒▒▒▒░░░░░░░▒░          
+                  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒          
+                    ░▒▒▒░     ░▒▒▒▒              
 
 10
-    ttttttt                              
-    tsssssstttt        ttttt               
- tttsss ttttttttt  ttttssstt tttt          
- tssst         tsssss ssssssstt        
- tssst          ssssss ttttsss t        
- tssst        tttsss tttttttttttt      
- tssst      tttssssstttt t@g t  ggt t    
- tssst      tttssssstttt g@@ t t@@t t   
- tssst        tttsss tttt tttt  tttt t    
- tssst            ssssstttttttttt          
- tssssst        tssssstttttttttt          
-  tttssssst      sssstttttttttttt        
-     tsssstssssssssssssstttttttt  t        
-       tssg tgtg tsssssssssttt t          
-                sssssssssssssss          
-                  tssst     tssss    
+                         ░                       
+                      ░░▒▒░░                    
+     ░░░            ░░░░▒░░░▒▒▒░░                 
+     ░░░            ░░░░░░░░░░░▒░                 
+      ░░░        ░▒░░▒░▒░▒░▒░▒▒▒▒▒░░░             
+     ░░░░          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░               
+      ░░░░        ░▓▒▒▒▒░░░░▒▒▒▒▒▓▒░    ░░       
+       ░▒        ░▒▒▒▓█▒▒░░░▒▒█▒▒▒▒░░ ░▒▒▒░░      
+        ░        ░▒▒▒▒░░░░░░░░░▒░▒▒░░░░░▒▒▒       
+       ░▒▒▒▒▒▒░░░░▒▒▒▒░░░░░░░░░▒▒▒▒▒▒▒░░          
+      ░▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▒░░░░░░░░▒▒▒▒▒░             
+      ░▒▒▒▒   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░              
+        ░░░       ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒               
+         ░░        ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒                
+          ░         ░░▒▒▒▒▒▒▒▒▒░                  
+          ░░        ░▒▓▓▒░░░▒▓▓▒░                 
+          ░░       ░▒▒▓▒▓▒   ▒▒▒▓▒▒░               
+                   ░▒▒▒▒░░   ░▒▒▒▒░░            
 
 11
-        @@@@@@@@@@                                            
-    g@@@ssttttttss@@@                                       
-   @gtttttttttttttttt@@                                       
-  @@ttttttttttttttttttt@@                                       
- @@ttttttttttttttttttttt@@                                     
-@@tttttttttttttttt@@t@@tt@@                                     
-@@sssttttttttttttttt@@t@@tttt@@                                   
-@@tttttttttttttttttt@@t@@tttt@@                                   
-@@tttttttsssssttttttttttttttt@@                                   
-@@ssstttttttttttttttttttttst@@                                   
-  @@sstt@@tttttttttt@@ttt@@tt@@                                   
-    @@@gttttttttttttttttt@@@@                                     
-      t@@@sstttttttttttt@@@                                       
-    @@sss@@@@@@@@@@@@@@sss@@                                     
-  @@ssssssssss@@@@@@@@ssssssss@@                                   
-    @@@@@@@@@       @@@@@@@@@    
+  ▓ ░▒██ ▓▓▓▓▓▓█████ ▓▓▓▓  
+     ▓▓▓▓▓ ██  █▓▓ █    ▓  
+     ▓▓▓▓▓ ██▓ █▓▓  ▓   ▓  
+  ▓ ░▒██ ▓▓▓▓▓▓█████ ▓▓▓▓
+  ▓ ░▒██ ▓▓▓▓▓▓█████ ▓▓▓▓    
+  ▓   ▓▓   ▓▓▓▓█████▓▓█▓▒  
+  ▓  ▓▓▓█  ▒▓▓▓██ ██▓▒▓▒▓  
+      ▓▓   █▓▓▓ ▓▓██▓▒▒▓▓   
+  ▓  ▓▓▓ ▓ ▓▓▓▓ ▓▓ ▓▓▒░▓▒  
+  ▓▒ ▓▓▓█  █▓▓  ▓▓ ▓▓▒▒▓▒  
+  ▓░█  █▓▓  █   ▓▓  ▓▒▓▒▒  
+  ▓▓▓▓ █▓▓ ▓▓▓ ██   ▓▒▓▒▒  
+  ▓ ░▒██ ▓▓▓▓▓▓█████ ▓▓▓▓ 
+  ▓▒ ▓▓▓█  █▓▓  ▓▓ ▓▓▒▒▓▒  
 
 12
-       aaaabbbb        bbbbcc                  
-       aaaabbbb        bbbbcc                  
-       aaaaaaaddddddddddddeee        bbbb      
-       aaaaaaaddddddddddddeee        bbbb      
-       aaaaaaafffaaaafffff        bbbb      
-       aaaaaaafffaaaafffff        bbbb      
-   aaaaffffffffdddddddddddddd        bbbb      
-   aabbbbbdddddddddddddddddddddddddddddd      
-   aabbbbbccdddddddddddddddddddddddddddd      
-   aaddddddddddddddddddddddddddddddddddd      
-   aaddddddddddddddddddddddddddddddddddd      
-          aaddddddddddddddddddddbbbbbb      
-          aaddbbbbbbbbbbbbbbbbbbbbbb      
-          aabbbbffffaaaaaddddddeee      
-          aabbbbgg   dddgg     bbbb      
-          aabgggg   dddgg     bbbb      
-          aabbbb   dddgg     abb      
-          aabbbb   dddgg     bbb      
+  ▓ ░▒██ ▓▓▓▓▓▓█████ ▓▓▓▓  
+     ▓▓▓▓▓ ██  █▓▓ █    ▓  
+     ▓▓▓▓▓ ██▓ █▓▓  ▓   ▓  
+  ▓ ░▒██ ▓▓▓▓▓▓█████ ▓▓▓▓ 
+  ▓ ░▒██ ▓▓▓▓▓▓█████ ▓▓▓▓   
+  ▓   ▓▓   ▓▓▓▓█████▓▓█▓▒  
+      ▓▓   █▓▓▓ ▓▓██▓▒▒▓▓  
+    ░ ▓▓    ▓▓▓ ▓▓   ▓▒░█  
+  ▓  ▓▓▓ ▓ ▓▓▓▓ ▓▓ ▓▓▒░▓▒  
+  ▓▒ ▓▓▓█  █▓▓  ▓▓ ▓▓▒▒▓▒  
+  ▓▓▓▓▓▓▓▓ ███ ██▓  ▓▒▒▒░  
+  ▓░█  █▓▓  █   ▓▓  ▓▒▓▒▒  
+  ▓▓▓▓ █▓▓ ▓▓▓ ██   ▓▒▓▒▒  
+  ▓ ░▒██ ▓▓▓▓▓▓█████ ▓▓▓▓ 
+  ▓▒ ▓▓▓█  █▓▓  ▓▓ ▓▓▒▒▓▒  
 
-13
- g taaab tbbbbaaabbbbbbbaaaa  
-     bbbbbb bb  babb b    b  
-     bbbbbb bbc babb  b   b  
-  g taaab tbbbbaaabbbbbbbaaaa
-  g taaab tbbbbaaabbbbbbbaaaa    
-  g   bbb   bbbbbaaaaabbab  
-  g  bbbba  babbb bb bbabab  
-      bbb   abbb babbabb  
-  g  bbb  b bbbb b bbbab  
-  gb bbbba  abbb  bbbabb  
-  gbabb babb  b   bb  babb  
-  bbbb babb bbb bba   babb  
-  g taaab tbbbbaaabbbbbbbaaaa 
-  gb bbbba  abbb  bbbabb  
+13          
+                     ████▓           
+        ░████▓     ░███████          
+      ░███████▓  ░██░    ░▓█▓        
+     █████████▓ ░█▓         █▓       
+   ░█████░ ░██▓ ░█░ ▓▓  ▓█  █▓       
+  █▓        ░█▓ ░░  ██  ███ ░▓       
+            ░█▓ ░██░       ▒█▓       
+            ░█▓ ░████░   ████        
+           ░██▓░░░▓██░░░░██▒░        
+           ░████████████████▓        
+            ░█▓   ░█████████▓        
+            ░█▓   ░█████████         
+            ░█▓   ░████████░         
+            ░█▓   ░████████░         
+            ░█▓     ███████          
+            ░█▒  ░██████████▓        
+            ░██░▓▓▓█████████▓█░▓     
 
+14                                       
+                    ▒▒                
+                  ░░ ░░  ░░░            
+               ░░▒░ ▓░░▒                
+              ▒▒░▒░░░░  ░▒              
+             ▒▓▒░░░░▒▒░░░░              
+       ▓▒  ▒█   ▓░▒    ▒▒░░             
+      ░▓   ▒█   ▓░▒   █▓▓▒▒             
+              ▓░░░░░░░▓▓░░░░▒    ▒      
+             ░░░░░▒    ░░░░░▒▒▒▓█▒      
+             ▒▒░▒░░▒   ▒░░░░░▒  ▓       
+                       ░▒░░░░▓          
+        ▒       ░░░░░░░░░░░░▒           
+      ░███  ▒░░░░░░░░░░░░░▒░            
+        ▒  ▒░░░░░░░▒▒░░                 
+           ▒░░░░░░  █                   
+            ░░░░░ ▓████                 
+            ░░░░░   █                   
+               ░░▒▒▒                    
+                     ▒                  
+                      ░                 
 
-14
-          aaddaa                                              
-        ddaaab             abb                             
-      aabbabddaaddaa      aabbab                             
-     aaddaaabbbaabb     aabbab aaa                           
-    aaddaa aaa aaddaa                           
-    aaddaaaaaaaaaabb      
-  aaddaaaaaaaaaabbbbaaa                           
-  aaddaaaaaaaaaaabbaaa                           
-aaddaaaaaaaaaaaaaa   aabb                          
-aaddaaaaa aaabbaabb   aabb                          
-aaddaaaaa bbaabbbaa aaddaa                          
-aaddaaaaaabbbaabba aaaddaa                          
- aabbbaaaaaaaabbaaa                             
-  ddaaabbabbbbbabba                             
-    ddaabbbaabbba                             
-    aabbbbbbaabba                              
-    aabbaabbaabba                               
-      aaddaaaaaa                             
-      ddaaaddaa                             
-        aaa      aabbaaa                             
-        aaa     dddaab                             
-        aabb  aabb                                      
-       aabb aaa                                           
-      aabb  baa                                           
-    aaddaa    aaddaa                     
-                  
+15
+          ██████████                                            
+      ▓███▒▒░░░░░░▒▒███                                       
+     █▓▒░░░░░░░░░░░░░░▒██                                       
+    ██▒░░░░░░░░░░░░░░░░░██                                       
+   ██░░░░░░░░░░░░░░░░░░░▒██                                     
+  ██░░░░░░░░░░░░░██░▒██░░▒██                                     
+██▒▒░░░░░░░░░░░░░██░▒██░░░░░██                                   
+██░░░░░░░░░░░░░░░██░▒██░░░░░██                                   
+██░░░░░░░░░▒▒▒▒░░░░░░░░▒▒▒░░██                                   
+██▒▒░░░░░░░░░░░░░░░░░░░░░▒░░██                                   
+  ██▒░░██▒░░░░░░░░▒██░░░██▒▒██                                   
+    ███▓░░░░░░░░░░░░░░░▒████                                     
+      ▒███▒░░░░░░░░░░░▒▓███                                       
+    ██▒▒▒██████████████▒▒▒██                                     
+  ██▒▒▒▒▒▒▒▒▒████████▒▒▒▒▒▒▒██                                   
+    █████████       █████████   
 
-20
-     bbbbbbbbbbaaaaaaa
-     bbbbbbbbbbaaaaaaa
-bbbbbbbbbbbbbbbbbbbaaaaaaaa
-bbbbbbbbbbbbbbbbbbbaaaaaaaa
-     bbbbbaaaabbbbaaaa
-     bbbbbaaaabbbbaaaa
-     aaaaaaaaaaaaaaaa
-     aaaaaaaaaaaaaaaa
-     aaaaaaaaaaaaaaaa
-     bbbbbbbbbaaaaaaaaaaaaaa
-     bbbbbbbbbaaaaaaaaaaaaaa
- aaaaaabbbaaaaaaa
- aaaaaabbbaaaaaaa
-     bbbbbbbbbbaaaaaaa
-     bbbbbbbbbbaaaaaaa
-     bbbbbbbb        aaaa
-     bbbbbbbb        aaaa 
+16
+         ░░              ░░               
+         ▒▒ ░  ░░░░░   ░ ▒▒░              
+       ░░   ░ ▒▓░░░░ ░▓░   ░░             
+       ░░                   ░░            
+       ░   ▓            ░▓  ░             
+       ░░▒               ▒▒ ░             
+        ░░    ░░     ░     ░▒             
+       ░░    ░▓▓    ░█▒     ░             
+       ░░     ░░     ░░     ░             
+        ░░       ▓█▓       ▒▒    ▒██      
+          ▓█            ░▓▓░    ░░  ▓     
+             ▓▓▓░    ▒▓▓▒      ░    ▓     
+           ▒    ▒▓▓▓░   ░▒░   ░░    ▓     
+          ▒    ░     ░    ▓░  ▓    ░▒     
+          ░▒   ▒     ▒░  ▒░ ░ ░  ░▒░      
+          ░  ░  ▓░ ░░   ▓ ▓░░░  ░░        
+        ░░   ░░ ▓░ ░▒ ░░   ▒▒  ░░         
+        ░░    ▓▓     ▒█░   ▒▒ ░░          
+        ░░    ░░      ░    ▒▒ ▒           
+        ░░░    ▒     ▒░   ░░▒             
+           ▒▓▒▒▓▓▒▓▒▓▓▓▒▓▒░    
 
+17
+         ▓██████████▓        
+       ░█▓▓▓▓▓▓▓▓▓▓▓██▓      
+      █░         ░▓▓▓▓███    
+   ░███░     ▓█    ▓▓▓▓▓██▒  
+   ░█░ ░█  ░█  ▓█  ▓▓▓▓▓██▒  
+   ░█████    ▒██▓  ▓▓▓▓▓██▒  
+  █░               ▓▓▓▓▓██▒  
+   ░█░             ▓▓▓▓▓██▒  
+   ░█░             ▓█▓▓▓██▒  
+   ░█░           ▒████▓▓██▒  
+   ░█░         ▓██▓▓▓▓▓▓██▒  
+   ░█░       ▒██▓▓▓▓▓▓▓▓██▒  
+   ░█░         ▓██████▓▓██▒  
+      █░             ▓▓▓██▒  
+       ░█████████████████    
 
-21
-  aaddbbbb    bbbbbbbbbbbbbbbbbbbbbbb
-ddaaaaabbbb    bbbbbbbbbbbbbbbbbbbbbbb 
-    ddddaabbbbbbbbbbbbbbbbbbbbbbbbbbbb 
- aaddaaaaabbbbaaaaaabbbaabbbbbbbbbbbbb 
-ddaaaa   bbbbbbbbbbbbbbaaaaabbbbaaaab
-     bbbbbbbbbbbbbbaaadddaaaadddaaa
-    abbbbbbbbbbbbbbaaadddaaaadddaaa
-        bbbbbaaaaaaaaaaaaaaaaaaaaaaa
-        bbbbbaaaaaaaaaaaaaaaaaaaaaaa
-    aaaaaabbbbbbaaaaaaaaaaaaaaaaaaaaa
-    aaaaaabbbbbbbbaaaaaaaaaaaaaaaaaaaaa
-        bbbbbbbbbbbbbbbbbbbbbbbaaaaaaa
-        bbbbbbbbbbbbbbbbbbbbbbbaaaaaa    
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        aaaa                aaaa
-
-
-22
-    aaaa    aaaaaaaaaaaaaa                        
-    aaaa    aa  aa     a                   
-    aaaaaaaaaaaaaaaaaa                    
-    aaaaaabbb         aa                
-    aaaaabbbbbbbbbaaaabbbb                    
-    bbbbabbbbbbbbbaaaabbbb                      
-    bbbbbaaaaaaaaabbaaa                    
-    bbbbbaaaaaaaaabbaaa                 
-aaaaabbbbbbbbbbbbbbbbbbb                  
-aaaaabbbbbbbbbbbbbbbbbbb                   
-    bbbbbbbbbaaaaaaaabbbbb                    
-    bbbbbbbbbaaaaaaaabbbbb                
-    bbbbbbbbbbbbbbaaaa                    
-    bbbbbbbbbbbbbbaaaa                
-    bbbb            aaaa     
-   
-
-23
-     bbbbbbbbbbbbbbbbbbb
-     bbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbaaaaabbbbaabbbb
-    aaaaaabbbaaaabbbbaabb
-    bbbbbaaaaaaaaaaaaaaa
-    bbbbbaaaaaaaaaaaaaaa
-aaaaabbbbbbbbaaaaabbaa
-aaaaabbbbbbbbaaaaabbaa
-    bbbbbbbbbbaaaaabbb
-    bbbbbbbbbbaaaaabbb
-    bbbbbaaaaaaaaaaaaddd
-    bbbbbaaaaaaaaaaaaddd
-    bbbbbaaaaaaaaaaaaddd
-    aaaa        aaaa
-
+18                                             
+          ░▒▒░                                              
+        ▒▒░▒░             ░▓▒                             
+      ░▓▒░░▒░░░▒░▒▒█░      ░▒▓▒░                             
+     ░▒░░▒▒░░░▒▒▒▒▓░     ░▒▓▒ ░░░                           
+    ░▒▒░░░░░░▒▒█░     ░▒▓▓▒░░▒░                           
+    ░▒▒▒▒▒▒▒▒▓▓▒▒▒░░ ▒█▓▒░░░░░░                          
+  ░▒▒▒▒▒▒▒▒▒▓▓▓▓▓▒▒▓█▓▓▓▒ ░▒░                          
+  ░▒▒▒▒▒▒▒▒▒▓▓▒▒▒▓▓▒▓▓▓▓▒░ ░▒░                          
+░▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒░░▒▒   ░▒░                         
+░▒▒▒▒▒▒░ ░▒▒▒▓▒▒▒▒░░░░▒▓▓▒░   ░▒░                       
+░▒▒▒▒▒▒▒ ▒░░▒▒█▒▒░░▒░░▒█▓▓▒░░░▒▒▒▒░                      
+░▒▒▒▒▒▒▒▒░  ░▒█▒▒▓▒░░  ▒▓▓▓█▓▓▒▒░░▒░                      
+ ░▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▓▒░░░░░▒▓▓▓▒▒▓██▓▓▓▒                     
+  ▒▒▒░░▒▒▓▒▒▒░▒▒▒▒▒▒▓▒▒░░ ░▓▓░     ░▒▒░                     
+    ▒▒▓███▓▒▓▓▒▒▒▒░▒▒▒▒▓▓▓█▓▓█▒                               
+    ░▓████▓▒▓▓▒▒▓▒░▒▓▓▓▓▓█▓▓▒                                
+    ▒▓▓▓▓▓▒▓▓▓▓▓▒░▓▓▓▓▓█▓▒                                 
+      ░▒▒▓▒▒▒▓▓██▓▓░▓▓▒▒▒▒▒▒░                                
+      ▒▒░▒▒░ ░▒▒▒░░▒▒▒▒▒▒▒▒▒▒░                              
+        ░░░      ░▒▒░░░▒▒▓▒▒▓▓▒▒                              
+        ░░░     ▒░░▒░▒░▒█░▒▒░                                
+        ░▒░  ░▒░ ▒▓░░▒░  ░                                 
+       ░▒░ ░▒░                                           
+      ░▒░  ▒░                                           
+    ░░▒░    ▒▒░                                         
+                                                                  
