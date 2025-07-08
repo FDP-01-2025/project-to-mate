@@ -41,10 +41,10 @@ void GameStart() {
         int EnemyOriginalLife = Enemy.vida; 
         PrintBattleEnemies(SelecterCharacter, IdEnemy1);
         int Seleccion;
-       do
-       {
-        bool IsMove;
-        if(maxTurns>20){
+        do
+        {
+           bool IsMove;
+           if(maxTurns>20){
             NormalWin=1;
             Defeat=0;
             GoodWin=0;
@@ -56,14 +56,14 @@ void GameStart() {
         PrintLifeEnemy(Enemy.vida, EnemyOriginalLife);
         // cout<<Seleccion << "HOla";
         Battlebucle(Seleccion, siguen, IsMove, modificador, Enemy_modificador,CantObjetos,
-        Jugador, Enemy, Defeat, NormalWin, GoodWin, VidaOriginal1);
-        PrintLifeBar(Jugador.vida, VidaOriginal1);
-        PrintLifeEnemy(Enemy.vida, EnemyOriginalLife);
-
-       } while (siguen && maxTurns<=19);
+            Jugador, Enemy, Defeat, NormalWin, GoodWin, VidaOriginal1);
+            PrintLifeBar(Jugador.vida, VidaOriginal1);
+            PrintLifeEnemy(Enemy.vida, EnemyOriginalLife);
+            
+        } while (siguen && maxTurns<=19);
         
         //HERE GOES THE BATTLE CHANGES
-
+        
         if(Defeat){
             system("cls");
             PrintBackgroundDialogue("YouWinBackground.txt", YourWinColorID, FightBattles[battle][1]);
@@ -81,6 +81,26 @@ void GameStart() {
         sleep_for(0.1s);
     }
     FOUND_ED();
+    vector<string> FinalEnd = {
+        "Congratulation, you made it this far....",
+        "thanks to you Sr.Cabani is finally found",
+        "he will always remember you as the hero you are",
+        "have a great day"
+        "SIVARMON HERO"
+    };
+    cout<<endl<<endl;
+    int rows, cols;
+    GetConsoleSize(rows, cols);
+    for(int i = 0;i < 4; i++) {
+        string line= FinalEnd[i];
+        cout<<string((cols-line.size())/2, ' ');
+        PrintTypewriter(line);
+        getch();
+        cout << "\r\033[K";
+    }
+    cout << string((cols-FinalEnd[4].size())/2, ' ') << NEGRITA << FG_ORANGE << FinalEnd[4] << RESET << endl;
+    sleep_for(1s);
+    getch();
     
 }
 
