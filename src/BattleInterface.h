@@ -1,5 +1,5 @@
-#include "DataBaseOutput.h"
 #include "FightBackground.h"
+#include "DataBaseOutput.h"
 
 int lines, bottomline;
 
@@ -149,7 +149,7 @@ int PrintSelectionMenu(const vector<string>& names, const vector<string>& typeNa
 }
 
 
-void MovesMenu(int SivarmonSelected, int Enemy) {
+void MovesMenu(int SivarmonSelected, int Enemy, bool& que, int& seleccion) {
     TiposDataBase OP_TYPES = TiposCall(SivarmonSelected);
     MovimientosDataBase OP_MOVES = MovimientosCall(SivarmonSelected);
     SivarmonDataBase OP_INFO = SivarmonesCall(SivarmonSelected);
@@ -244,10 +244,12 @@ void MovesMenu(int SivarmonSelected, int Enemy) {
         }
 
         int selectedMoveIndex = PrintSelectionMenu(moveNames, moveTypeNames, moveBoxLeftCol, moveBoxTopRow, moveBoxWidth);
+        seleccion = selectedMoveIndex;
+        que = true;
 
     }
     else {
-        int ObjectsID[4] = {5, 2, 8, 7};
+        int ObjectsID[4] = {1, 2, 3, 4};
         vector<string> ObjectNames;
         vector<string> ObjectDamage;
         map<int, string> ObjectNameType = {
@@ -263,6 +265,8 @@ void MovesMenu(int SivarmonSelected, int Enemy) {
             ObjectDamage.push_back(ObjectNameType[OP_OBJ.accion]);
         }
         int selectedObjectIndex = PrintSelectionMenu(ObjectNames, ObjectDamage, moveBoxLeftCol, moveBoxTopRow, moveBoxWidth);
+        seleccion = selectedObjectIndex;
+        que = false;
     }
 }
 
