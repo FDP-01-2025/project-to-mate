@@ -25,7 +25,7 @@ void GameStart() {
         
         //HERE GOES THE BATTLE CHANGES
 
-        if(defeat){
+        if(Defeat){
             PrintBackgroundDialogue("YouWin.txt", YourWinColorID, FightBattles[battle][1]);
             return; //Go back to the main menu
         }

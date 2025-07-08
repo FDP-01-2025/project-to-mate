@@ -33,6 +33,12 @@ void FillColor(){
     ColorID['s'] = 240;
     ColorID['t'] = 248;
     ColorID[' '] = 0;
+
+    // Colores para los caracteres de sprites.txt
+    ColorID['░'] = 51;     // Cyan vivo
+    ColorID['▒'] = 46;     // Verde vivo
+    ColorID['▓'] = 226;    // Amarillo fuerte
+    ColorID['█'] = 196;    // Rojo vivo
 }
 
 vector<string> SivarmonMap={

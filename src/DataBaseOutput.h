@@ -59,6 +59,8 @@ struct ObjetosDataBase{
 
 };
 
+void PrintColoredSprite(const vector<string>& sprite);
+
 //Function to call the information of a specific Sivarmon
 SivarmonDataBase SivarmonesCall(int eleccion){
     //Define variables.
@@ -246,6 +248,7 @@ SpritesDataBase SpritesCall(int seleccion){
                 {
                     Salida.id = idObtenido;
                     Salida.Sprite = spriteTemporal;
+                    //PrintColoredSprite(Salida.Sprite); // <-- imprime el sprite coloreado
                     break;
                 }
                 
@@ -316,4 +319,17 @@ ObjetosDataBase ObjetosCall(int seleccion){
         return {};
     }
 
+}
+
+// Imprime un sprite coloreando cada caracter según ColorID
+void PrintColoredSprite(const vector<string>& sprite) {
+    extern map<char, int> ColorID; // Usa el ColorID definido en MenuUtils.h
+    for (const string& line : sprite) {
+        for (char ch : line) {
+            int color = ColorID.count(ch) ? ColorID[ch] : 7; // 7 = gris claro por defecto
+            // Usa ANSI escape para color 8 bits (funciona en Windows Terminal y muchas consolas modernas)
+            cout << "\033[38;5;" << color << "m" << ch << "\033[0m";
+        }
+        cout << endl;
+    }
 }
