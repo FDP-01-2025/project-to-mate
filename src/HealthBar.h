@@ -1,5 +1,5 @@
 #include "header.h"
-
+//include all necessary
 string GenerateHPBar(int currentHP, int maxHP) {
     SetConsoleOutputCP(CP_UTF8);
     //Set the health bar measures
