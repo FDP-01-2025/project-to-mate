@@ -77,7 +77,7 @@ void GameStart() {
         }
         sleep_for(0.1s);
     }
-    FOUND_ED();
+    // FOUND_ED();
     
 }
 
