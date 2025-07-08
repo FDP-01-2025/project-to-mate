@@ -38,6 +38,7 @@ void GameStart() {
         SivarmonDataBase Jugador = SivarmonesCall(SelecterCharacter);
         SivarmonDataBase Enemy = SivarmonesCall(IdEnemy1);
         int VidaOriginal1 = Jugador.vida;
+        int EnemyOriginalLife = Enemy.vida; 
         PrintBattleEnemies(SelecterCharacter, IdEnemy1);
         int Seleccion;
        do
@@ -52,11 +53,12 @@ void GameStart() {
         maxTurns++;
         MovesMenu(SelecterCharacter, IdEnemy1, IsMove, Seleccion );
         PrintLifeBar(Jugador.vida, VidaOriginal1);
+        PrintLifeEnemy(Enemy.vida, EnemyOriginalLife);
         // cout<<Seleccion << "HOla";
         Battlebucle(Seleccion, siguen, IsMove, modificador, Enemy_modificador,CantObjetos,
         Jugador, Enemy, Defeat, NormalWin, GoodWin, VidaOriginal1);
         PrintLifeBar(Jugador.vida, VidaOriginal1);
-
+        PrintLifeEnemy(Enemy.vida, EnemyOriginalLife);
 
        } while (siguen && maxTurns<=19);
         
