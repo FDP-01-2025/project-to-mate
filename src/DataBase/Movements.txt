@@ -92,3 +92,6 @@ El sivarmon logra hacer un ataque cortante muy poderoso.
 25 Furia_de_los_caidos 5 6 0.5
 El sivarmon obtiene por un momento el poder suficiente para 
 amedrentar a su enemigo bajando bajandole su defensa mucho.
+
+26 Maestro 1 1 0.2
+Los maestros utilizan su conocimiento con los sivarmons para retar a los futuros maestros
