@@ -59,7 +59,7 @@ struct ObjetosDataBase{
 
 };
 
-void PrintColoredSprite(const vector<string>& sprite);
+vector<string> GetColoredSprite(const vector<string>& sprite);
 
 //Function to call the information of a specific Sivarmon
 SivarmonDataBase SivarmonesCall(int eleccion){
@@ -246,10 +246,9 @@ SpritesDataBase SpritesCall(int seleccion){
                 //if that happends we asign to a structure the data we get from the file.
                 if (seleccion == idObtenido)
                 {
-                    Salida.id = idObtenido;
-                    Salida.Sprite = spriteTemporal;
-                    //PrintColoredSprite(Salida.Sprite); // <-- imprime el sprite coloreado
-                    break;
+                Salida.id = idObtenido;
+                Salida.Sprite = GetColoredSprite(spriteTemporal); // Ahora guarda el sprite coloreado
+                break;
                 }
                 
 
@@ -321,15 +320,17 @@ ObjetosDataBase ObjetosCall(int seleccion){
 
 }
 
-// Imprime un sprite coloreando cada caracter según ColorID
-void PrintColoredSprite(const vector<string>& sprite) {
-    extern map<char, int> ColorID; // Usa el ColorID definido en MenuUtils.h
+// Devuelve un vector<string> con los caracteres coloreados, sin imprimir
+vector<string> GetColoredSprite(const vector<string>& sprite) {
+    extern map<char, int> ColorID;
+    vector<string> coloredSprite;
     for (const string& line : sprite) {
+        string coloredLine;
         for (char ch : line) {
-            int color = ColorID.count(ch) ? ColorID[ch] : 7; // 7 = gris claro por defecto
-            // Usa ANSI escape para color 8 bits (funciona en Windows Terminal y muchas consolas modernas)
-            cout << "\033[38;5;" << color << "m" << ch << "\033[0m";
+            int color = ColorID.count(ch) ? ColorID[ch] : 7;
+            coloredLine += "\033[38;5;" + to_string(color) + "m" + ch + "\033[0m";
         }
-        cout << endl;
+        coloredSprite.push_back(coloredLine);
     }
+    return coloredSprite;
 }
