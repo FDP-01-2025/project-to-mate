@@ -3,7 +3,8 @@
 
 int lines, bottomline;
 
-void tleEnemies(int SivarmonSelected, int Enemy){
+void PrintBattleEnemies(int SivarmonSelected, int Enemy){
+    SetConsoleOutputCP(CP_UTF8);
     enableANSIColors();                      
     system("cls");           
     drawBackgroundWithOvals();  
