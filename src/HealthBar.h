@@ -34,7 +34,6 @@ void PrintLifeBar (int HP, int maxHP) {
 }
 
 void PrintLifeEnemy(int HP, int maxHP) {
-    //Just as before, we do the health bar, but alight to the right
     SetConsoleOutputCP(CP_UTF8);
     int rows, cols;
     GetConsoleSize(rows, cols);
@@ -45,6 +44,6 @@ void PrintLifeEnemy(int HP, int maxHP) {
     string hpBar = GenerateHPBar(HP, maxHP);
     cout << BG_RED << FG_RED << hpBar << RESET; //Print the health bar
     cout << NEGRITA << BG_WHITE << FG_BLACK << "] " << HP << "/" << maxHP << RESET;
-    cout << BACK_BLUE << string (10, ' ');
+    cout << BACK_BLUE << string (10, ' ') << RESET;
 }
 
