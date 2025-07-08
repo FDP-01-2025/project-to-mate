@@ -34,11 +34,11 @@ void PrintLifeBar (int HP, int maxHP) {
 }
 
 void PrintLifeEnemy(int HP, int maxHP) {
-    //just as before but we are setting the bar to be on the right side of the console
+    //just as before set the bar position, but moved to the right
     SetConsoleOutputCP(CP_UTF8);
     int rows, cols;
     GetConsoleSize(rows, cols);
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), { (SHORT)(cols-30), (SHORT)5});
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), { (SHORT)(cols-40), (SHORT)5});
     cout << NEGRITA << BG_WHITE << FG_ORANGE << " HP: " << RESET;
     cout << NEGRITA << BG_WHITE << FG_BLACK << "[" << RESET;
     //First print the beging
