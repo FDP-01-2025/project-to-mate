@@ -42,6 +42,7 @@ struct TiposDataBase{
 struct SpritesDataBase{
     int id;// Identificator of sprite.
     vector<string> Sprite; // Sprite.
+    vector<vector<int>> ColorSprite;   // Mismo sprite, pero como mapa de colores xd
 };
 
 struct ObjetosDataBase{
@@ -181,7 +182,77 @@ TiposDataBase TiposCall(int seleccion){
 }
 
 //Function to call a specific sprite from a file
-SpritesDataBase SpritesCall(int seleccion){
+SpritesDataBase SpritesCall(int seleccion) {
+    SpritesDataBase salida;
+    ifstream spritesFile("src/DataBase/Sprites.txt");
+    SetConsoleOutputCP(CP_UTF8);
+
+    if (!spritesFile.is_open()) {
+        cout << "No se abrió el archivo.\n";
+        return salida;
+    }
+
+    string linea;
+    string lineaGuardada;
+    bool usarGuardada = false;
+
+    while (true) {
+        if (!usarGuardada) {
+            if (!getline(spritesFile, linea)) break;
+        } else {
+            linea = lineaGuardada;
+            usarGuardada = false;
+        }
+
+        // Si la línea es puramente numérica
+        if (!linea.empty() && linea.find_first_not_of("0123456789") == string::npos) {
+            int idObtenido;
+            try {
+                idObtenido = stoi(linea);
+            } catch (...) {
+                continue;
+            }
+
+            vector<string> spriteTemporal;
+            vector<vector<int>> coloresTemporales;
+
+            while (getline(spritesFile, linea)) {
+                if (linea.empty()) break;
+
+                if (linea.find_first_not_of("0123456789") == string::npos) {
+                    lineaGuardada = linea;
+                    usarGuardada = true;
+                    break;
+                }
+
+                spriteTemporal.push_back(linea);
+
+                // Generar la línea de colores
+                vector<int> colorLine;
+                for (char c : linea) {
+                    if (ColorID.count(c)) {
+                        colorLine.push_back(ColorID[c]);
+                    } else {
+                        colorLine.push_back(15); // Color blanco por defecto
+                    }
+                }
+                coloresTemporales.push_back(colorLine);
+            }
+
+            if (idObtenido == seleccion) {
+                salida.id = idObtenido;
+                salida.Sprite = spriteTemporal;
+                salida.ColorSprite = coloresTemporales;
+                break;
+            }
+        }
+    }
+
+    return salida;
+}
+
+
+/* SpritesDataBase SpritesCall(int seleccion){
     //Define variables and set the terminal in UTF8
     SpritesDataBase Salida;
     ifstream Sprites("src/DataBase/Sprites.txt");
@@ -269,7 +340,7 @@ SpritesDataBase SpritesCall(int seleccion){
         return SpritesDataBase{};
     }    
 }
-
+ */
 //Function to call information of a specific objet.
 ObjetosDataBase ObjetosCall(int seleccion){
 

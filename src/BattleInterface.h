@@ -7,6 +7,100 @@ void PrintBattleEnemies(int SivarmonSelected, int Enemy){
     enableANSIColors();                      
     system("cls");           
     drawBackgroundWithOvals();  
+
+    SpritesDataBase OP_SPRITE = SpritesCall(SivarmonSelected);
+    SpritesDataBase CPU_SPRITE = SpritesCall(Enemy);
+
+    SetConsoleOutputCP(CP_UTF8);
+
+    int consoleRows, consoleCols;
+    GetConsoleSize(consoleRows, consoleCols);
+
+    int maxLeftWidth = 0, maxRightWidth = 0;
+    for (const auto& line : OP_SPRITE.Sprite)
+        maxLeftWidth = max(maxLeftWidth, (int)line.size());
+    for (const auto& line : CPU_SPRITE.Sprite)
+        maxRightWidth = max(maxRightWidth, (int)line.size());
+
+    int half = consoleRows / 2;
+    int c1_x = half + half / 2; 
+    int c1_y = consoleCols / 4; 
+    int c2_x = c1_x;             
+    int c2_y = 3 * consoleCols / 4;
+    int centerY = half + half / 2 - 7;
+
+    int centerX1 = consoleCols / 3;
+    int ovalRightStartX = c2_y; 
+    int centerX2 = ovalRightStartX;
+
+    int offsetY = -1;
+    int offsetX = 10; 
+
+    int sprite1_height = OP_SPRITE.Sprite.size();
+    int sprite2_height = CPU_SPRITE.Sprite.size();
+
+    int leftStartX = centerX1 - maxLeftWidth / 2 + offsetX;
+    int leftStartY = centerY - sprite1_height + 1 + offsetY;
+
+    int spacing = 5; 
+    int rightStartX = leftStartX + maxLeftWidth + spacing;
+    int rightStartY = centerY - sprite2_height + 1 + offsetY;
+
+    int lines = max(sprite1_height, sprite2_height);
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
+    for (int i = 0; i < lines; i++) {
+        // Dibujo del sprite izquierdo (jugador)
+        if (i < sprite1_height) {
+            const string& line = OP_SPRITE.Sprite[i];
+            const vector<int>& colors = OP_SPRITE.ColorSprite[i];
+            COORD pos = { (SHORT)leftStartX, (SHORT)(leftStartY + i) };
+            SetConsoleCursorPosition(hConsole, pos);
+
+            for (size_t j = 0; j < line.size(); j++) {
+                char ch = line[j];
+                int color = colors[j];
+                if (ch != ' ') {
+                    SetConsoleTextAttribute(hConsole, color);
+                    cout << " ";  // Puedes usar el carácter original si prefieres
+                } else {
+                    cout << " ";  // O usa "\033[C" si prefieres mover el cursor
+                }
+            }
+        }
+
+        // Dibujo del sprite derecho (enemigo)
+        if (i < sprite2_height) {
+            const string& line = CPU_SPRITE.Sprite[i];
+            const vector<int>& colors = CPU_SPRITE.ColorSprite[i];
+            COORD pos = { (SHORT)rightStartX, (SHORT)(rightStartY + i) };
+            SetConsoleCursorPosition(hConsole, pos);
+
+            for (size_t j = 0; j < line.size(); j++) {
+                char ch = line[j];
+                int color = colors[j];
+                if (ch != ' ') {
+                    SetConsoleTextAttribute(hConsole, color);
+                    cout << "█";
+                } else {
+                    cout << " ";
+                }
+            }
+        }
+    }
+
+    // Restaurar color al final
+    SetConsoleTextAttribute(hConsole, 15);
+
+    int leftEndY = leftStartY + sprite1_height;
+    int rightEndY = rightStartY + sprite2_height;
+    bottomline = max(leftEndY, rightEndY);
+}
+
+/* void PrintBattleEnemies(int SivarmonSelected, int Enemy){
+    enableANSIColors();                      
+    system("cls");           
+    drawBackgroundWithOvals();  
     SpritesDataBase OP_SPRITE = SpritesCall(SivarmonSelected);
     SpritesDataBase CPU_SPRITE = SpritesCall(Enemy);
 
@@ -83,7 +177,7 @@ void PrintBattleEnemies(int SivarmonSelected, int Enemy){
     int rightEndY = rightStartY + sprite2_height;
     bottomline = max(leftEndY, rightEndY);
 }
-
+ */
 
 int PrintSelectionMenu(const vector<string>& names, const vector<string>& typeNames, int boxLeftCol, int boxTopRow, int boxWidth) {
     int consoleRows, consoleCols;
