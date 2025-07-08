@@ -40,24 +40,25 @@
             ░██░▓▓▓█████████▓█░▓   
 
 3
-                         ░                       
-                      ░░▒▒░░                    
-     ░░░            ░░░░▒░░░▒▒▒░░                 
-     ░░░            ░░░░░░░░░░░▒░                 
-      ░░░        ░▒░░▒░▒░▒░▒░▒▒▒▒▒░░░             
-     ░░░░          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░               
-      ░░░░        ░▓▒▒▒▒░░░░▒▒▒▒▒▓▒░    ░░       
-       ░▒        ░▒▒▒▓█▒▒░░░▒▒█▒▒▒▒░░ ░▒▒▒░░      
-        ░        ░▒▒▒▒░░░░░░░░░▒░▒▒░░░░░▒▒▒       
-       ░▒▒▒▒▒▒░░░░▒▒▒▒░░░░░░░░░▒▒▒▒▒▒▒░░          
-      ░▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▒░░░░░░░░▒▒▒▒▒░             
-      ░▒▒▒▒   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░              
-        ░░░       ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒               
-         ░░        ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒                
-          ░         ░░▒▒▒▒▒▒▒▒▒░                  
-          ░░        ░▒▓▓▒░░░▒▓▓▒░                 
-          ░░       ░▒▒▓▒▓▒   ▒▒▒▓▒▒░               
-                   ░▒▒▒▒░░   ░▒▒▒▒░░           
+                         s                       
+                      ssttss                    
+     sss            ssststsstttss                 
+     sss            ssssssssststss                
+      sss        stststststststttttsss            
+     ssss          tttttttttttttttttss            
+      ssss        srtststssstststtrts    ss       
+       st        sttttrntsssttnstttss stttsss      
+        s        sttttsssssssssststsssstttt       
+       stttttttsssttttsssssssssstttttttss          
+      stttttrrtttttttttssssssssttttttt              
+      stttt   tttttttttttttttttttttttss             
+        sss       tttttttttttttttttt                
+         ss        sttttttttttttttt                
+          s         ssttttttttttss                 
+          ss        srrrtsssstrrts                 
+          ss       sttrtrt   stttrtts              
+                   sttttss   stttttss
+
 
 4
      ████████████           ███████████

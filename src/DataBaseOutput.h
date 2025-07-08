@@ -247,7 +247,8 @@ SpritesDataBase SpritesCall(int seleccion){
                 if (seleccion == idObtenido)
                 {
                 Salida.id = idObtenido;
-                Salida.Sprite = GetColoredSprite(spriteTemporal); // Ahora guarda el sprite coloreado
+                Salida.Sprite = spriteTemporal;
+                //Salida.Sprite = GetColoredSprite(spriteTemporal); // Ahora guarda el sprite coloreado
                 break;
                 }
                 
@@ -320,15 +321,18 @@ ObjetosDataBase ObjetosCall(int seleccion){
 
 }
 
-// Devuelve un vector<string> con los caracteres coloreados, sin imprimir
+
 vector<string> GetColoredSprite(const vector<string>& sprite) {
-    extern map<char, int> ColorID;
     vector<string> coloredSprite;
     for (const string& line : sprite) {
         string coloredLine;
-        for (char ch : line) {
-            int color = ColorID.count(ch) ? ColorID[ch] : 7;
-            coloredLine += "\033[38;5;" + to_string(color) + "m" + ch + "\033[0m";
+        for (char c : line) {
+            if (ColorID.count(c)) {
+                int color = ColorID[c];
+                coloredLine += "\033[38;5;" + to_string(color) + "m" + c + "\033[0m";
+            } else {
+                coloredLine += c; // Si no está en el mapa, lo deja sin color
+            }
         }
         coloredSprite.push_back(coloredLine);
     }
