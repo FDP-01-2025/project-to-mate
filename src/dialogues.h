@@ -141,12 +141,8 @@ void PrintBackgroundDialogue(const string& filename, const map<char, int>& Color
                 << BG_WHITE << string(maxLineLength, ' ') << RESET;
         }
     }
-    sleep_for(3s);
+    sleep_for(1s);
     system("cls");
 }
 
-/*int main(){
-    PrintBackgroundDialogue("ParadiseBackground.txt", ParadiseColorID, dialogue1);
-    PrintBackgroundDialogue("TowerBackground.txt", TowerColorID, dialogue1);
-    PrintBackgroundDialogue("YouWinBackground.txt", YourWinColorID, dialogue1);
-}*/
+
