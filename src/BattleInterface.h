@@ -2,7 +2,7 @@
 #include "DataBaseOutput.h"
 
 int lines, bottomline;
-
+//print enemies
 void PrintBattleEnemies(int SivarmonSelected, int Enemy){
     SetConsoleOutputCP(CP_UTF8);
     enableANSIColors();                      
@@ -271,8 +271,3 @@ void MovesMenu(int SivarmonSelected, int Enemy, bool& que, int& seleccion) {
     }
 }
 
-// int main(){
-//     PrintBattleEnemies(1, 3);
-//     MovesMenu(1, 3);
-//     return 0;
-// }
