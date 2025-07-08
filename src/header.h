@@ -99,7 +99,7 @@ const string BG_LIGHTBLUE = "\033[48;5;111m";
 const string BG_ORANGE ="\033[48;5;216m";
 const string BG_DEEP_BLUE ="\033[48;5;17m";
 //Battle Backgrounds colors
-#define RESET     "\033[0m"
+
 #define BACK_BLUE   "\033[48;5;75m"
 #define BACK_GREEN  "\033[48;5;70m"
 #define BACK_WHITE  "\033[48;5;15m"
