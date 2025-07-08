@@ -21,13 +21,24 @@ Respecto a la aplicación de los temas vistos en clase, se utilizaran las siguie
 
 **If/else, switch:** Estas estructuras nos servirán para poder controlar cada acción que tiene disponible el jugador y anidar cada movimiento de cada bestia de manera estructurada y eficaz. Donde los if y if/else nos servirán para poder comprobar en qué parte del menú estamos o validar que el jugador no trate de romper el juego, mientras que con switch podremos guardar de forma ordenada cada acción que tomaría el jugador.
 
+<img width="445" alt="Captura de pantalla 2025-07-07 a la(s) 11 56 58 p m" src="https://github.com/user-attachments/assets/349c32b8-f13d-422f-9471-6bd060eacefa" />
+
+
 **For, While/do While:** Con estas estructuras de bucle nos permitirá crear un flujo de turnos en los combates y permitir el eficaz funcionamiento de estos. Un bucle for se encargará de recorrer una lista de ataques disponibles y aplicar modificaciones a las estadísticas, mientras un while mantendrá la batalla activa mientras alguno de los combatientes tenga vida, por otro lado un do while garantiza que cada combate mínimo se ejecute una vez antes de verificar condiciones de victoria o derrota.
+
+<img width="604" alt="Captura de pantalla 2025-07-07 a la(s) 11 57 54 p m" src="https://github.com/user-attachments/assets/172e1c82-f4b2-4a53-b8c2-0ce295139d26" />
+
 
 **Vectores, Arreglos/Arrays:** Estas estructuras de datos nos servirán para poder crear los sprites/diseños de las bestias en la terminal. Guardando dentro de un array o vector los caracteres ordenados que al ser mostrados en consola nos otorguen un sprite del diseño de la bestia.
 
 **Funciones:** Estas nos permitirán estructurar y separar el código del juego en base a diferentes categorías ya sean funciones sobre el combate, funciones sobre diálogos o sprites de personajes o etc.
 
+<img width="647" alt="Captura de pantalla 2025-07-07 a la(s) 11 55 38 p m" src="https://github.com/user-attachments/assets/414a5fbd-68e7-4684-8c21-230a8aebf0bd" />
+
+
 **Strings:** Con ellas podremos almacenar los diálogos del juego y información importante. Con cada string podremos guardar gran parte de la sección de diálogos del juego, permitiéndonos más orden en el código y a su vez podremos guardar información en este tipo de variable como el nombre del jugador, de las bestias o ataques.
+
+<img width="666" alt="Captura de pantalla 2025-07-07 a la(s) 11 59 09 p m" src="https://github.com/user-attachments/assets/9869a8a4-b709-49f0-890a-318931745732" />
 
 **Clases/Uniones:** Con el uso de clases podemos asignar movimientos, estadísticas, características especiales y demás datos personalizables a cada especie de Sivarmon. Así podremos administrar diferentes atributos de manera estructurada que podrán brindar mayor profundidad a cada batalla, y habilidades o estrategias al jugador y su bestia.
 Archivos en el Disco: Se utilizaran archivos para almacenar las diferentes sprites de Sivarmons que serán utilizados según las elecciones del jugador, estos están formados de caracteres ASCII que permitirán mostrar diversas criaturas con símbolos.
