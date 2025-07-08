@@ -80,6 +80,7 @@ void GameStart() {
         }
         sleep_for(0.1s);
     }
+    // call the found funtion to print the lost sprite
     FOUND_ED();
     vector<string> FinalEnd = {
         "Congratulation, you made it this far....",
@@ -92,26 +93,30 @@ void GameStart() {
     int rows, cols;
     GetConsoleSize(rows, cols);
     for(int i = 0;i < 4; i++) {
-        string line= FinalEnd[i];
+        string line= FinalEnd[i]; // print each line of the good bye text centered
         cout<<string((cols-line.size())/2, ' ');
         PrintTypewriter(line);
         getch();
         cout << "\r\033[K";
     }
     cout << string((cols-FinalEnd[4].size())/2, ' ') << NEGRITA << FG_ORANGE << FinalEnd[4] << RESET << endl;
+    //print the last element different color
     sleep_for(1s);
     getch();
     
 }
 
 void About() {
+    // we do the printing of the information of the game
     system("cls");
     int rows, cols;
     GetConsoleSize(rows, cols);
     PrintSivarMesagge(GameName);
     cout<<endl;
     string aboutG= "ABOUT THE GAME";
+    //print the title
     cout<<string(cols/2 - aboutG.size()/2, ' ') << FG_ORANGE << aboutG << RESET << endl << endl;
+    //a vector full of information and facts about the game
     vector<string> GameExplanation = {
         "Welcome to the world of Sivarmons!",
         "Once you choose your Sivarmon, your journey begins",
@@ -123,25 +128,27 @@ void About() {
         "Will you be strong enough to face the ultimate challenge?"
     };
     for(string line: GameExplanation){
-        cout<<string(cols/2 - line.size()/2, ' ');
-        cout<<line<<endl;
+        cout<<string(cols/2 - line.size()/2, ' '); // this is like padding to make centered the text
+        cout<<line<<endl; //and print each line of the information
     }
-    getch();
+    getch(); //wait for a key
 }
 
 void Credits() {
+    //Center all the text and print all the name of the members of the group
     int rows, cols;
     GetConsoleSize(rows, cols);
     PrintSivarMesagge(GameName);
     for(int i=0;i<3;i++) cout<<endl;
     cout << string((cols/2)-(27/2), ' ') << BG_BLACK << FG_ORANGE << NEGRITA << "THIS GAME EXISTS THANKS TO" << RESET << endl;
-    for(int i=0;i<2;i++) cout<<endl;
+    for(int i=0;i<2;i++) cout<<endl; //Leave spaces between text
+    //Make the names strings to get the size easier
     string name1 = "Diego Armando Mata Cortez [00115025]\n";
     string name2 = "Manuel Tobar Garcia [00067423]\n";
     string name3 = "Andy Samuel Ochoa Gonzalez [00064825]\n";
     string name4 = "Claudia Sofia Pocasangre Peralta [00005225]\n";
 
-    cout << string((cols)/2 - (name1.size())/2, ' ') << name1 <<endl;
+    cout << string((cols)/2 - (name1.size())/2, ' ') << name1 <<endl; //print on the center with padding
     cout << string((cols)/2 - (name2.size())/2, ' ') << name2 <<endl;
     cout << string((cols)/2 - (name3.size())/2, ' ') << name3 <<endl;
     cout << string((cols)/2 - (name4.size())/2, ' ') << name4 <<endl;

@@ -2,6 +2,7 @@
 
 void mainPageLogo(){
     int rows, columns;
+    //print the main page with the game name
     GetConsoleSize(rows, columns);
     PrintSivarMesagge(GameName);
     
@@ -12,7 +13,7 @@ void mainPageLogo(){
     vector<string> colores = {
         FG_RED, FG_YELLOW, FG_GREEN, FG_CYAN, FG_BLUE, FG_MAGENTA, FG_WHITE, FG_PINK
     };
-    
+    //the vector are the color avaliable for the printing
     int colorIndex = 0;
     
     cout<<string((rows/2)+2, ' ') << FG_BLUE<<NEGRITA<<"2025 TO->MATE INC"<<RESET<<endl;
@@ -22,6 +23,7 @@ void mainPageLogo(){
         coord.Y = messageY;
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
         cout << colores[colorIndex % colores.size()] << FLICKERING << NEGRITA << message << RESET << flush;
+        //print based on the color mod the size of the array
         colorIndex++;
         sleep_for(300ms);
     }
@@ -32,35 +34,27 @@ void mainPageLogo(){
 void mostrarMenu(const vector<string>& MainMenu, int choice) {
     int rows, columns;
     GetConsoleSize(rows, columns);
-    
+    // print the main menu centerd
     int BoxWide = 80;
-    int BoxHeight = MainMenu.size() + 2;
-    
+    int BoxHeight = MainMenu.size();
+
     int x = (columns - BoxWide) / 2;
     int y = (rows - BoxHeight) / 2;
-   
+
     system("cls");
 
     for (int i = 0; i < y; ++i) cout << endl;
 
-    cout << string(x, ' ') << "+" << string(BoxWide - 2, '-') << "+" << endl;
-    cout << string(x, ' ') << "|" << string(BoxWide - 2, ' ') << "|" << endl;
-
     for (int i = 0; i < MainMenu.size(); ++i) {
         string message = (i == choice ? "> " : "  ") + MainMenu[i];
-        message += string(BoxWide - 2 - message.length(), ' ');
+        message += string(BoxWide - message.length(), ' ');
 
-        cout << string(x, ' ') << "|";
-
+        cout << string(x, ' ');
+        
         if (i == choice) {
-            cout << BG_VIOLET << FG_WHITE << NEGRITA << message << RESET;
+            cout << BG_WHITE << FG_VIOLET << NEGRITA << message << RESET << endl;
         } else {
-            cout << BG_BLACK << FG_VIOLET << message << RESET;
+            cout << BG_WHITE << FG_BLACK << message << RESET << endl;
         }
-
-        cout << "|" << endl;
-    }
-
-    cout << string(x, ' ') << "|" << string(BoxWide - 2, ' ') << "|" << endl;
-    cout << string(x, ' ') << "+" << string(BoxWide - 2, '-') << "+" << endl;
+    } // and show the background white while not selected 
 }
