@@ -190,12 +190,12 @@ SivarmonDataBase& J1, SivarmonDataBase& E, bool& loose, bool& win, bool& SuperWi
     {
         Objetos[i] = ObjetosCall(i+1);
     }
+
+    selected = J1.idMovimientos[selected]; // convertir índice en ID real
     
 
     
         combate(J1, E,Jugador_Movimientos, Enemy_Movimientos, Objetos,
         selected, ItIsMove, modificador, Enemy_modificador, BattleStill, CantObjetos, loose, win, SuperWin, VidaOr);
-        cout<<E.vida<<endl;
-        cout<<J1.vida<<endl;
     
 }

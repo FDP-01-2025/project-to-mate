@@ -1,6 +1,4 @@
 #include "header.h"
-#include "Utils.cpp"
-#include "DataBaseOutput.h"
 
 vector<string> FoundMessage = {
     "                                                                                ",
@@ -54,16 +52,31 @@ void PrintFoundSprite(){
     int rows, cols;
     GetConsoleSize(rows, cols);
     SetConsoleOutputCP(CP_UTF8);
-    SivarmonDataBase  FOUND = SivarmonesCall (9);
-    SpritesDataBase FoundSprite = SpritesCall (FOUND.idSprite);
-    int spriteHeight = FoundSprite.Sprite.size();
+    
+    vector<string> cabanas = {
+        "▒▒▓▓▓▓    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓      ",
+        "▒▒▒▒▓▓▓▓    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓    ",
+        "    ▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓    ",
+        " ▒▒▒▒▒▒▒█████▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓    ",
+        "▒▒▒▒   ▓▓▓▓▓▓▓▓▓▓▓▓▓████▓▓▓▓████    ",
+        "     ▓▓▓▓▓▓▓▓▓▓▓░░░░████░░░░████    ",
+        "    █▓▓▓▓▓▓▓▓▓▓▓░░░░████░░░░████    ",
+        "        ▓▓▓▓░░░░░░░░░░░░░░░░░░░░    ",
+        "        ▓▓▓▓░░░░░░░░░░░░░░░░░░░░    ",
+        "    ░░░░▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░    ",
+        "    ░░░░▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░    ",
+        "        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░    ",
+        "        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░",
+        "        ░░░░░░░░░░░░░░░░░░░░░░░░░░░░",
+        "        ░░░░░░░░░░░░░░░░░░░░░░░░    ",
+        "        ░░░░░░░░░░░░░░░░░░░░░░░░    ",
+        "        ░░░░                ░░░░    "
+    };
+    int spriteHeight = cabanas.size();
     int startRow = FoundMessage.size() + 2;
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    // cout<<"ID del sprite: " << FOUND.idSprite << endl;
-    if(FoundSprite.Sprite.size()==0) cout<<"NO LLEGA\n";
-
     for (int i = 0; i < spriteHeight; i++) {
-        const string& line = FoundSprite.Sprite[i];
+        const string& line = cabanas[i];
         int padding = 60;
         if (padding < 0) padding = 0;
 
@@ -84,5 +97,4 @@ void FOUND_ED(){
     FoundBackground();
     printFoundMessage();
     PrintFoundSprite();
-   
 }
